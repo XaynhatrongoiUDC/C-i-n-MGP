@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thi công điện nhà phố trọn gói, an toàn, đúng tải | Cơ Điện MGP</title>
+<meta name="description" content="Thi công hệ thống điện nhà phố: đi dây âm tường, tủ điện, chống giật, đúng tiêu chuẩn tải. Bảo hành 5 năm, có sơ đồ điện bàn giao.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-950:#0b1220;
+    --navy-900:#101a2c;
+    --navy-800:#182236;
+    --panel:#141f34;
+    --panel-2:#182642;
+    --line:#26375a;
+    --amber:#f5b301;
+    --amber-dim:#8a6607;
+    --copper:#c8763a;
+    --text:#e9edf5;
+    --text-dim:#98a4bd;
+    --ok:#3ddc84;
+    --danger:#ef4b4b;
+    --radius:14px;
+    --maxw:1160px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--navy-950);
+    color:var(--text);
+    font-family:'Inter',system-ui,sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{font-family:'Space Grotesk',sans-serif;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12.5px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--amber);
+    display:flex;align-items:center;gap:8px;
+  }
+  .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 3px rgba(245,179,1,.18);}
+
+  /* ---------- Header / circuit rail ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(11,18,32,.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--maxw);margin:0 auto;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;}
+  .logo .bolt{color:var(--amber);font-size:20px;}
+  .nav-links{display:flex;gap:28px;font-size:14.5px;color:var(--text-dim);}
+  .nav-links a:hover{color:var(--text);}
+  .nav-cta{
+    background:var(--amber);color:#1a1300;font-weight:700;font-size:14px;
+    padding:10px 18px;border-radius:8px;white-space:nowrap;
+  }
+  @media (max-width:820px){.nav-links{display:none;}}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;overflow:hidden;padding:88px 0 64px;}
+  .hero-grid{
+    display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;
+  }
+  @media (max-width:900px){.hero-grid{grid-template-columns:1fr;}}
+  .hero h1{
+    font-size:clamp(30px,4.6vw,52px);
+    line-height:1.08;
+    margin:18px 0 20px;
+    letter-spacing:-.01em;
+  }
+  .hero h1 .hl{color:var(--amber);}
+  .hero p.lead{color:var(--text-dim);font-size:17px;max-width:52ch;margin-bottom:28px;}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--amber);color:#1a1300;font-weight:700;padding:15px 26px;
+    border-radius:10px;font-size:15.5px;border:none;cursor:pointer;
+    box-shadow:0 8px 24px rgba(245,179,1,.22);
+  }
+  .btn-ghost{
+    border:1px solid var(--line);color:var(--text);padding:15px 26px;border-radius:10px;
+    font-size:15.5px;font-weight:600;background:transparent;
+  }
+  .hero-meta{display:flex;gap:26px;margin-top:34px;flex-wrap:wrap;}
+  .hero-meta div{font-size:13px;color:var(--text-dim);}
+  .hero-meta b{display:block;color:var(--text);font-family:'Space Grotesk',sans-serif;font-size:22px;}
+
+  /* breaker panel visual */
+  .panel-visual{
+    background:var(--panel);border:1px solid var(--line);border-radius:16px;
+    padding:22px;position:relative;
+  }
+  .panel-visual .bar{
+    display:flex;justify-content:space-between;align-items:center;
+    font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--text-dim);
+    margin-bottom:16px;letter-spacing:.06em;
+  }
+  .breaker-row{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:8px;}
+  .breaker{
+    background:var(--panel-2);border:1px solid var(--line);border-radius:6px;
+    height:54px;position:relative;
+  }
+  .breaker::after{
+    content:"";position:absolute;left:50%;top:8px;transform:translateX(-50%);
+    width:4px;height:16px;border-radius:2px;background:var(--ok);
+  }
+  .breaker.off::after{background:var(--danger);top:30px;}
+  .panel-visual .label-row{display:flex;justify-content:space-between;margin-top:14px;font-size:11px;color:var(--text-dim);font-family:'JetBrains Mono',monospace;}
+  .panel-visual .status{color:var(--ok);}
+
+  /* ---------- Trust bar ---------- */
+  .trustbar{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--panel);}
+  .trustbar .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding:26px 24px;}
+  .trustbar .item{text-align:center;border-left:1px solid var(--line);padding:0 12px;}
+  .trustbar .item:first-child{border-left:none;}
+  .trustbar b{display:block;font-family:'Space Grotesk',sans-serif;font-size:24px;color:var(--amber);}
+  .trustbar span{font-size:12.5px;color:var(--text-dim);}
+  @media (max-width:700px){.trustbar .wrap{grid-template-columns:repeat(2,1fr);gap:18px 0;}
+    .trustbar .item:nth-child(3){border-left:none;}}
+
+  /* ---------- Section shared ---------- */
+  section{padding:80px 0;}
+  .sec-head{max-width:640px;margin-bottom:44px;}
+  .sec-head h2{font-size:clamp(24px,3vw,36px);margin:14px 0 10px;letter-spacing:-.01em;}
+  .sec-head p{color:var(--text-dim);font-size:15.5px;}
+
+  /* ---------- Services grid ---------- */
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  @media (max-width:900px){.services{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:600px){.services{grid-template-columns:1fr;}}
+  .svc-card{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px;transition:border-color .2s, transform .2s;
+  }
+  .svc-card:hover{border-color:var(--amber-dim);transform:translateY(-3px);}
+  .svc-card .num{font-family:'JetBrains Mono',monospace;color:var(--amber);font-size:13px;}
+  .svc-card h3{font-size:18px;margin:12px 0 8px;}
+  .svc-card p{color:var(--text-dim);font-size:14px;margin:0;}
+
+  /* ---------- Process timeline ---------- */
+  .timeline{position:relative;padding-left:0;}
+  .step{
+    display:grid;grid-template-columns:64px 1fr;gap:22px;padding-bottom:36px;position:relative;
+  }
+  .step:last-child{padding-bottom:0;}
+  .step .dot{
+    width:44px;height:44px;border-radius:50%;background:var(--panel);border:1.5px solid var(--amber);
+    display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;
+    color:var(--amber);font-weight:700;z-index:2;
+  }
+  .step .rail{position:absolute;left:22px;top:44px;bottom:-36px;width:1.5px;background:var(--line);}
+  .step:last-child .rail{display:none;}
+  .step h3{margin:6px 0 6px;font-size:17px;}
+  .step p{color:var(--text-dim);font-size:14.5px;margin:0;max-width:56ch;}
+
+  /* ---------- Comparison / mistakes ---------- */
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  @media (max-width:760px){.compare{grid-template-columns:1fr;}}
+  .compare-card{border-radius:var(--radius);padding:26px;border:1px solid var(--line);}
+  .compare-card.bad{background:rgba(239,75,75,.06);border-color:rgba(239,75,75,.35);}
+  .compare-card.good{background:rgba(61,220,132,.06);border-color:rgba(61,220,132,.35);}
+  .compare-card h3{font-size:16px;display:flex;align-items:center;gap:8px;margin-top:0;}
+  .compare-card ul{margin:14px 0 0;padding-left:18px;color:var(--text-dim);font-size:14px;}
+  .compare-card li{margin-bottom:8px;}
+
+  /* ---------- FAQ ---------- */
+  .faq-item{border-bottom:1px solid var(--line);padding:20px 0;}
+  .faq-q{
+    display:flex;justify-content:space-between;align-items:center;cursor:pointer;
+    font-size:16px;font-weight:600;
+  }
+  .faq-q .plus{font-family:'JetBrains Mono',monospace;color:var(--amber);font-size:20px;transition:transform .2s;}
+  .faq-item.open .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;color:var(--text-dim);font-size:14.5px;}
+  .faq-item.open .faq-a{max-height:220px;padding-top:12px;}
+
+  /* ---------- CTA / form ---------- */
+  .cta-block{
+    background:linear-gradient(135deg,var(--panel),var(--panel-2));
+    border:1px solid var(--line);border-radius:20px;padding:48px;
+    display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;
+  }
+  @media (max-width:820px){.cta-block{grid-template-columns:1fr;padding:32px 24px;}}
+  .cta-block h2{font-size:26px;margin:0 0 12px;}
+  .cta-block p{color:var(--text-dim);font-size:14.5px;margin-bottom:0;}
+  form{display:grid;gap:12px;}
+  input, textarea{
+    width:100%;background:var(--navy-950);border:1px solid var(--line);color:var(--text);
+    padding:13px 14px;border-radius:8px;font-family:inherit;font-size:14.5px;
+  }
+  input:focus, textarea:focus{outline:2px solid var(--amber);outline-offset:1px;}
+  form button{margin-top:4px;}
+
+  footer{border-top:1px solid var(--line);padding:36px 0;color:var(--text-dim);font-size:13.5px;}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none !important;scroll-behavior:auto !important;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo"><span class="bolt">⚡</span> CƠ ĐIỆN MGP</div>
+    <nav class="nav-links">
+      <a href="#dich-vu">Dịch vụ</a>
+      <a href="#quy-trinh">Quy trình</a>
+      <a href="#sai-lam">Rủi ro thường gặp</a>
+      <a href="#faq">Hỏi đáp</a>
+    </nav>
+    <a href="tel:0987285667" class="nav-cta">Gọi 0987 285 667</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Thi công điện nhà phố · TP.HCM &amp; Bình Dương</div>
+      <h1>Hệ thống điện tính đúng tải, <span class="hl">không lo quá tải &amp; chập cháy</span> sau khi hoàn thiện.</h1>
+      <p class="lead">Đội thợ điện MGP thi công phần điện âm tường, tủ điện, chống giật cho nhà phố &amp; nhà trọn gói — có bản vẽ sơ đồ điện bàn giao, đo tải trước khi lắp, bảo hành 5 năm.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="document.getElementById('lien-he').scrollIntoView({behavior:'smooth'})">Nhận báo giá thi công</button>
+        <a href="#dich-vu" class="btn-ghost">Xem hạng mục thi công</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>5 năm</b>Bảo hành hệ thống điện</div>
+        <div><b>100%</b>Có sơ đồ điện bàn giao</div>
+        <div><b>24h</b>Khảo sát báo giá</div>
+      </div>
+    </div>
+    <div class="panel-visual">
+      <div class="bar"><span>TỦ ĐIỆN TỔNG · MAIN DB</span><span class="status">● ĐANG HOẠT ĐỘNG</span></div>
+      <div class="breaker-row">
+        <div class="breaker"></div><div class="breaker"></div><div class="breaker"></div>
+        <div class="breaker"></div><div class="breaker off"></div><div class="breaker"></div>
+      </div>
+      <div class="breaker-row">
+        <div class="breaker"></div><div class="breaker"></div><div class="breaker"></div>
+        <div class="breaker"></div><div class="breaker"></div><div class="breaker"></div>
+      </div>
+      <div class="label-row"><span>Tầng trệt / Lầu 1 / Lầu 2</span><span>Có CB chống giật (ELCB)</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="trustbar">
+  <div class="wrap">
+    <div class="item"><b>120+</b><span>Nhà phố đã thi công điện</span></div>
+    <div class="item"><b>0</b><span>Sự cố quá tải sau bàn giao</span></div>
+    <div class="item"><b>≤48h</b><span>Xử lý bảo hành tại nhà</span></div>
+    <div class="item"><b>3</b><span>Bước kiểm tra trước khi đóng trần</span></div>
+  </div>
+</div>
+
+<section id="dich-vu">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Hạng mục thi công</div>
+      <h2>Từ đi dây âm tường đến tủ điện tổng</h2>
+      <p>Mỗi hạng mục đều được đo tải riêng trước khi chốt phương án, không thi công theo bản vẽ mẫu dựng sẵn.</p>
+    </div>
+    <div class="services">
+      <div class="svc-card"><div class="num">01</div><h3>Đi dây điện âm tường</h3><p>Luồn ống gen chống cháy, đi đường dây theo trục đứng/ngang tách biệt điện nhẹ (mạng, camera) và điện nặng.</p></div>
+      <div class="svc-card"><div class="num">02</div><h3>Tủ điện tổng &amp; tủ điện tầng</h3><p>Tính tải theo công suất thiết bị thực tế, chia nhánh riêng cho bếp, máy lạnh, máy nước nóng.</p></div>
+      <div class="svc-card"><div class="num">03</div><h3>CB chống giật (ELCB/RCBO)</h3><p>Lắp cho khu vực ẩm ướt (nhà tắm, sân thượng, bếp) theo tiêu chuẩn an toàn điện dân dụng.</p></div>
+      <div class="svc-card"><div class="num">04</div><h3>Hệ thống ổ cắm &amp; công tắc</h3><p>Bố trí theo mặt bằng nội thất thực tế, tránh tình trạng thiếu ổ cắm hoặc dây nối lòng thòng.</p></div>
+      <div class="svc-card"><div class="num">05</div><h3>Điện nhẹ: mạng, camera, chuông</h3><p>Đi tuyến cáp mạng, camera an ninh, chuông cửa hình riêng biệt, không đi chung ống với điện động lực.</p></div>
+      <div class="svc-card"><div class="num">06</div><h3>Nghiệm thu &amp; đo tải hoàn công</h3><p>Đo điện trở cách điện, kiểm tra tiếp địa, bàn giao sơ đồ điện thực tế (as-built) trước khi đóng trần thạch cao.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="quy-trinh" style="background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Quy trình thi công</div>
+      <h2>5 bước, đúng thứ tự trước khi đóng trần &amp; tô tường</h2>
+      <p>Thứ tự này quyết định việc có phải đục tường sửa lại sau khi hoàn thiện nội thất hay không.</p>
+    </div>
+    <div class="timeline">
+      <div class="step"><div class="rail"></div><div class="dot">1</div><div><h3>Khảo sát &amp; đo tải thiết bị</h3><p>Liệt kê toàn bộ thiết bị điện dự kiến sử dụng (máy lạnh, bếp từ, máy nước nóng...) để tính công suất tủ điện tổng.</p></div></div>
+      <div class="step"><div class="rail"></div><div class="dot">2</div><div><h3>Lên sơ đồ đi dây</h3><p>Vẽ tuyến dây theo mặt bằng, tách riêng đường điện động lực và điện nhẹ, đánh dấu vị trí ổ cắm/công tắc.</p></div></div>
+      <div class="step"><div class="rail"></div><div class="dot">3</div><div><h3>Thi công phần thô</h3><p>Luồn ống gen, đi dây âm tường/âm sàn trước khi tô trát, đúng lúc với tiến độ phần thô xây dựng.</p></div></div>
+      <div class="step"><div class="rail"></div><div class="dot">4</div><div><h3>Lắp tủ điện &amp; thiết bị</h3><p>Lắp CB tổng, CB nhánh, ổ cắm, công tắc; đấu nối theo sơ đồ đã duyệt ở bước 2.</p></div></div>
+      <div class="step"><div class="dot">5</div><div><h3>Đo kiểm &amp; bàn giao</h3><p>Đo điện trở cách điện, kiểm tra tiếp địa, bàn giao sơ đồ hoàn công và phiếu bảo hành 5 năm.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="sai-lam">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Rủi ro thường gặp</div>
+      <h2>Vì sao nhiều nhà phố bị chập, nhảy CB sau 1–2 năm sử dụng?</h2>
+    </div>
+    <div class="compare">
+      <div class="compare-card bad">
+        <h3>⚠ Thi công không đo tải</h3>
+        <ul>
+          <li>Dùng chung 1 CB cho cả bếp từ và máy lạnh → CB nhảy liên tục</li>
+          <li>Không tách điện nhẹ và điện nặng → nhiễu tín hiệu mạng/camera</li>
+          <li>Không có bản vẽ hoàn công → sửa chữa sau này phải dò từng đoạn tường</li>
+        </ul>
+      </div>
+      <div class="compare-card good">
+        <h3>✓ Thi công đúng kỹ thuật</h3>
+        <ul>
+          <li>Mỗi thiết bị công suất lớn có CB nhánh riêng, đúng tiết diện dây</li>
+          <li>Điện nhẹ/điện nặng đi ống riêng, có ELCB tại khu vực ẩm ướt</li>
+          <li>Bàn giao sơ đồ as-built, tra cứu vị trí dây khi cần khoan/đóng đinh</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap" style="max-width:820px;">
+    <div class="sec-head">
+      <div class="eyebrow">Hỏi đáp</div>
+      <h2>Những câu hỏi khách hàng thường hỏi trước khi thi công</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Chi phí thi công điện nhà phố khoảng bao nhiêu?</span><span class="plus">+</span></div>
+        <div class="faq-a">Chi phí phụ thuộc diện tích, số tầng và số lượng thiết bị công suất lớn (máy lạnh, bếp từ...). MGP khảo sát và báo giá chi tiết theo hạng mục trong vòng 24h, không thu phí khảo sát.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Có cần thi công điện trước khi tô tường không?</span><span class="plus">+</span></div>
+        <div class="faq-a">Có. Phần đi dây âm tường/âm sàn phải hoàn thành trước khi tô trát và đóng trần thạch cao, nếu không sẽ phải đục lại tường đã hoàn thiện.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Bảo hành 5 năm áp dụng cho hạng mục nào?</span><span class="plus">+</span></div>
+        <div class="faq-a">Áp dụng cho toàn bộ hệ thống dây điện âm tường, tủ điện và thiết bị đóng cắt do MGP lắp đặt, với điều kiện không có tác động ngoại lực làm hư hỏng đường dây.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Có cung cấp bản vẽ sơ đồ điện sau khi hoàn thành không?</span><span class="plus">+</span></div>
+        <div class="faq-a">Có. Sau khi nghiệm thu, MGP bàn giao sơ đồ điện thực tế (as-built) để chủ nhà lưu lại, thuận tiện khi cần sửa chữa hoặc cải tạo sau này.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="lien-he">
+  <div class="wrap">
+    <div class="cta-block">
+      <div>
+        <div class="eyebrow">Nhận báo giá</div>
+        <h2>Khảo sát &amp; báo giá thi công điện trong 24h</h2>
+        <p>Để lại thông tin, đội kỹ thuật MGP sẽ liên hệ khảo sát công trình và tư vấn phương án đi điện phù hợp với thiết kế nội thất của bạn.</p>
+      </div>
+      <form onsubmit="event.preventDefault(); alert('Cảm ơn bạn! MGP sẽ liên hệ lại trong 24h.');">
+        <input type="text" placeholder="Họ và tên" required>
+        <input type="tel" placeholder="Số điện thoại" required>
+        <input type="text" placeholder="Địa chỉ công trình (Quận/Huyện)">
+        <textarea rows="3" placeholder="Diện tích, số tầng, ghi chú thêm..."></textarea>
+        <button type="submit" class="btn-primary">Gửi yêu cầu báo giá</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> Cơ Điện MGP · Thi công điện nhà phố TP.HCM &amp; Bình Dương</span>
+    <span>Hotline: <a href="tel:0987285667">0987 285 667</a></span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
