@@ -1,385 +1,2079 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thi công điện nhà phố trọn gói, an toàn, đúng tải | Cơ Điện MGP</title>
-<meta name="description" content="Thi công hệ thống điện nhà phố: đi dây âm tường, tủ điện, chống giật, đúng tiêu chuẩn tải. Bảo hành 5 năm, có sơ đồ điện bàn giao.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --navy-950:#0b1220;
-    --navy-900:#101a2c;
-    --navy-800:#182236;
-    --panel:#141f34;
-    --panel-2:#182642;
-    --line:#26375a;
-    --amber:#f5b301;
-    --amber-dim:#8a6607;
-    --copper:#c8763a;
-    --text:#e9edf5;
-    --text-dim:#98a4bd;
-    --ok:#3ddc84;
-    --danger:#ef4b4b;
-    --radius:14px;
-    --maxw:1160px;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:var(--navy-950);
-    color:var(--text);
-    font-family:'Inter',system-ui,sans-serif;
-    line-height:1.55;
-    -webkit-font-smoothing:antialiased;
-  }
-  h1,h2,h3,.display{font-family:'Space Grotesk',sans-serif;}
-  .mono{font-family:'JetBrains Mono',monospace;}
-  a{color:inherit;}
-  img{max-width:100%;display:block;}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
-  .eyebrow{
-    font-family:'JetBrains Mono',monospace;
-    font-size:12.5px;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-    color:var(--amber);
-    display:flex;align-items:center;gap:8px;
-  }
-  .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 3px rgba(245,179,1,.18);}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thi công điện nhà phố đúng tải | UDC</title>
+  <meta name="description" content="UDC thi công điện nhà phố tại TP.HCM, Bình Dương, Đồng Nai: tủ điện, dây âm tường, chống giật, tiếp địa, điện nhẹ và sơ đồ hoàn công.">
+  <meta name="theme-color" content="#2f58a8">
 
-  /* ---------- Header / circuit rail ---------- */
-  header{
-    position:sticky;top:0;z-index:50;
-    background:rgba(11,18,32,.86);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--maxw);margin:0 auto;}
-  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;}
-  .logo .bolt{color:var(--amber);font-size:20px;}
-  .nav-links{display:flex;gap:28px;font-size:14.5px;color:var(--text-dim);}
-  .nav-links a:hover{color:var(--text);}
-  .nav-cta{
-    background:var(--amber);color:#1a1300;font-weight:700;font-size:14px;
-    padding:10px 18px;border-radius:8px;white-space:nowrap;
-  }
-  @media (max-width:820px){.nav-links{display:none;}}
+  <!-- TODO: xác nhận đúng URL cuối cùng của trang rồi cập nhật canonical + og:url bên dưới -->
+  <link rel="canonical" href="https://udc.vn/thi-cong-dien-nha-pho/">
 
-  /* ---------- Hero ---------- */
-  .hero{position:relative;overflow:hidden;padding:88px 0 64px;}
-  .hero-grid{
-    display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;
-  }
-  @media (max-width:900px){.hero-grid{grid-template-columns:1fr;}}
-  .hero h1{
-    font-size:clamp(30px,4.6vw,52px);
-    line-height:1.08;
-    margin:18px 0 20px;
-    letter-spacing:-.01em;
-  }
-  .hero h1 .hl{color:var(--amber);}
-  .hero p.lead{color:var(--text-dim);font-size:17px;max-width:52ch;margin-bottom:28px;}
-  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
-  .btn-primary{
-    background:var(--amber);color:#1a1300;font-weight:700;padding:15px 26px;
-    border-radius:10px;font-size:15.5px;border:none;cursor:pointer;
-    box-shadow:0 8px 24px rgba(245,179,1,.22);
-  }
-  .btn-ghost{
-    border:1px solid var(--line);color:var(--text);padding:15px 26px;border-radius:10px;
-    font-size:15.5px;font-weight:600;background:transparent;
-  }
-  .hero-meta{display:flex;gap:26px;margin-top:34px;flex-wrap:wrap;}
-  .hero-meta div{font-size:13px;color:var(--text-dim);}
-  .hero-meta b{display:block;color:var(--text);font-family:'Space Grotesk',sans-serif;font-size:22px;}
+  <link rel="icon" type="image/jpeg" href="https://xaynha.udc.vn/wp-content/uploads/2026/04/udc-nen-2.jpg">
+  <link rel="apple-touch-icon" href="https://xaynha.udc.vn/wp-content/uploads/2026/04/udc-nen-2.jpg">
 
-  /* breaker panel visual */
-  .panel-visual{
-    background:var(--panel);border:1px solid var(--line);border-radius:16px;
-    padding:22px;position:relative;
-  }
-  .panel-visual .bar{
-    display:flex;justify-content:space-between;align-items:center;
-    font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--text-dim);
-    margin-bottom:16px;letter-spacing:.06em;
-  }
-  .breaker-row{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:8px;}
-  .breaker{
-    background:var(--panel-2);border:1px solid var(--line);border-radius:6px;
-    height:54px;position:relative;
-  }
-  .breaker::after{
-    content:"";position:absolute;left:50%;top:8px;transform:translateX(-50%);
-    width:4px;height:16px;border-radius:2px;background:var(--ok);
-  }
-  .breaker.off::after{background:var(--danger);top:30px;}
-  .panel-visual .label-row{display:flex;justify-content:space-between;margin-top:14px;font-size:11px;color:var(--text-dim);font-family:'JetBrains Mono',monospace;}
-  .panel-visual .status{color:var(--ok);}
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:site_name" content="UDC">
+  <meta property="og:title" content="Thi công điện nhà phố đúng tải | UDC">
+  <meta property="og:description" content="UDC thi công điện nhà phố tại TP.HCM, Bình Dương, Đồng Nai: tủ điện, dây âm tường, chống giật, tiếp địa, điện nhẹ và sơ đồ hoàn công.">
+  <meta property="og:url" content="https://udc.vn/thi-cong-dien-nha-pho/">
+  <meta property="og:image" content="https://xaynha.udc.vn/wp-content/uploads/2026/04/udc-nen-2.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
-  /* ---------- Trust bar ---------- */
-  .trustbar{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--panel);}
-  .trustbar .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding:26px 24px;}
-  .trustbar .item{text-align:center;border-left:1px solid var(--line);padding:0 12px;}
-  .trustbar .item:first-child{border-left:none;}
-  .trustbar b{display:block;font-family:'Space Grotesk',sans-serif;font-size:24px;color:var(--amber);}
-  .trustbar span{font-size:12.5px;color:var(--text-dim);}
-  @media (max-width:700px){.trustbar .wrap{grid-template-columns:repeat(2,1fr);gap:18px 0;}
-    .trustbar .item:nth-child(3){border-left:none;}}
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thi công điện nhà phố đúng tải | UDC">
+  <meta name="twitter:description" content="UDC thi công điện nhà phố tại TP.HCM, Bình Dương, Đồng Nai: tủ điện, dây âm tường, chống giật, tiếp địa, điện nhẹ và sơ đồ hoàn công.">
+  <meta name="twitter:image" content="https://xaynha.udc.vn/wp-content/uploads/2026/04/udc-nen-2.jpg">
 
-  /* ---------- Section shared ---------- */
-  section{padding:80px 0;}
-  .sec-head{max-width:640px;margin-bottom:44px;}
-  .sec-head h2{font-size:clamp(24px,3vw,36px);margin:14px 0 10px;letter-spacing:-.01em;}
-  .sec-head p{color:var(--text-dim);font-size:15.5px;}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.4/dist/lenis.css">
 
-  /* ---------- Services grid ---------- */
-  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-  @media (max-width:900px){.services{grid-template-columns:repeat(2,1fr);}}
-  @media (max-width:600px){.services{grid-template-columns:1fr;}}
-  .svc-card{
-    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-    padding:26px;transition:border-color .2s, transform .2s;
+  <!-- JSON-LD: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "UDC - Thi công điện nhà phố",
+    "url": "https://udc.vn/thi-cong-dien-nha-pho/",
+    "image": "https://xaynha.udc.vn/wp-content/uploads/2026/04/udc-nen-2.jpg",
+    "telephone": "+84987285667",
+    "areaServed": ["Thành phố Hồ Chí Minh", "Bình Dương", "Đồng Nai", "Thủ Đức", "Dĩ An", "Thuận An", "Biên Hòa"],
+    "priceRange": "$$",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "UDC",
+      "url": "https://udc.vn/"
+    }
   }
-  .svc-card:hover{border-color:var(--amber-dim);transform:translateY(-3px);}
-  .svc-card .num{font-family:'JetBrains Mono',monospace;color:var(--amber);font-size:13px;}
-  .svc-card h3{font-size:18px;margin:12px 0 8px;}
-  .svc-card p{color:var(--text-dim);font-size:14px;margin:0;}
+  </script>
 
-  /* ---------- Process timeline ---------- */
-  .timeline{position:relative;padding-left:0;}
-  .step{
-    display:grid;grid-template-columns:64px 1fr;gap:22px;padding-bottom:36px;position:relative;
+  <!-- JSON-LD: FAQPage (đồng bộ nội dung với mục FAQ trong trang) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Khi nào nên gọi đội điện vào công trình?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nên khảo sát ngay sau khi có mặt bằng công năng và trước giai đoạn tô trát. Nếu chờ tới lúc đóng trần hoặc lắp nội thất, nhiều tuyến dây âm tường phải đổi bằng giải pháp nổi hoặc phải đục sửa."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Chi phí thi công điện được tính như thế nào?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "UDC cần diện tích, số tầng, số thiết bị công suất lớn, loại vật tư và yêu cầu điện nhẹ để lập báo giá. Báo giá nên tách vật tư, nhân công, tủ điện, thiết bị đóng cắt và nghiệm thu."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Có cần bản vẽ điện nếu nhà phố nhỏ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cần. Nhà nhỏ vẫn có bếp, máy lạnh, máy nước nóng, ổ cắm và điện nhẹ. Sơ đồ giúp chia tải, xác định vị trí dây âm tường và là tài liệu quan trọng khi khoan tường hoặc sửa chữa."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "UDC có nhận sửa điện nhà đang ở không?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Có thể khảo sát để đánh giá. Với nhà đang ở, phương án ưu tiên khoanh vùng sự cố, đo tải, thay tủ điện hoặc bổ sung nhánh nổi/âm cục bộ, hạn chế đục phá khi chưa có căn cứ."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bảo hành phần điện ghi như thế nào?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Thời hạn và phạm vi bảo hành cần ghi rõ trong hợp đồng: đường dây, tủ điện, thiết bị đóng cắt, điều kiện loại trừ và thời gian phản hồi."
+        }
+      }
+    ]
   }
-  .step:last-child{padding-bottom:0;}
-  .step .dot{
-    width:44px;height:44px;border-radius:50%;background:var(--panel);border:1.5px solid var(--amber);
-    display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;
-    color:var(--amber);font-weight:700;z-index:2;
-  }
-  .step .rail{position:absolute;left:22px;top:44px;bottom:-36px;width:1.5px;background:var(--line);}
-  .step:last-child .rail{display:none;}
-  .step h3{margin:6px 0 6px;font-size:17px;}
-  .step p{color:var(--text-dim);font-size:14.5px;margin:0;max-width:56ch;}
+  </script>
 
-  /* ---------- Comparison / mistakes ---------- */
-  .compare{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
-  @media (max-width:760px){.compare{grid-template-columns:1fr;}}
-  .compare-card{border-radius:var(--radius);padding:26px;border:1px solid var(--line);}
-  .compare-card.bad{background:rgba(239,75,75,.06);border-color:rgba(239,75,75,.35);}
-  .compare-card.good{background:rgba(61,220,132,.06);border-color:rgba(61,220,132,.35);}
-  .compare-card h3{font-size:16px;display:flex;align-items:center;gap:8px;margin-top:0;}
-  .compare-card ul{margin:14px 0 0;padding-left:18px;color:var(--text-dim);font-size:14px;}
-  .compare-card li{margin-bottom:8px;}
+  <style>
+    :root {
+      /* ===== BẢNG MÀU 3 TÔNG: xanh dương nhạt (chủ đạo/CTA) – vàng gold (nhấn phụ) – đỏ (chỉ dùng cảnh báo/rủi ro) ===== */
+      --deep: #10233f;              /* màu CHỮ chính trên nền sáng */
+      --ink-2: #1c3559;
+      --bg: #f6f8fc;                /* nền trang chính, rất sáng */
+      --bg-soft: #eef3fb;           /* nền section luân phiên, ngả xanh nhạt */
+      --bg-linen: #fbf4e4;          /* nền section luân phiên, ngả vàng ấm nhạt */
+      --surface: #ffffff;           /* thẻ / card nổi trên nền */
+      --forest: var(--bg-soft);
+      --moss: #e4ecf9;
+      --ivory: var(--surface);
+      --linen: var(--bg-linen);
 
-  /* ---------- FAQ ---------- */
-  .faq-item{border-bottom:1px solid var(--line);padding:20px 0;}
-  .faq-q{
-    display:flex;justify-content:space-between;align-items:center;cursor:pointer;
-    font-size:16px;font-weight:600;
-  }
-  .faq-q .plus{font-family:'JetBrains Mono',monospace;color:var(--amber);font-size:20px;transition:transform .2s;}
-  .faq-item.open .plus{transform:rotate(45deg);}
-  .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;color:var(--text-dim);font-size:14.5px;}
-  .faq-item.open .faq-a{max-height:220px;padding-top:12px;}
+      --gold: #c9962e;
+      --gold-light: #e7b752;
+      --gold-deep: #8a6412;
+      --gold-ink: #6f4f10;
+      --gold-soft: #fbf0d8;
 
-  /* ---------- CTA / form ---------- */
-  .cta-block{
-    background:linear-gradient(135deg,var(--panel),var(--panel-2));
-    border:1px solid var(--line);border-radius:20px;padding:48px;
-    display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;
-  }
-  @media (max-width:820px){.cta-block{grid-template-columns:1fr;padding:32px 24px;}}
-  .cta-block h2{font-size:26px;margin:0 0 12px;}
-  .cta-block p{color:var(--text-dim);font-size:14.5px;margin-bottom:0;}
-  form{display:grid;gap:12px;}
-  input, textarea{
-    width:100%;background:var(--navy-950);border:1px solid var(--line);color:var(--text);
-    padding:13px 14px;border-radius:8px;font-family:inherit;font-size:14.5px;
-  }
-  input:focus, textarea:focus{outline:2px solid var(--amber);outline-offset:1px;}
-  form button{margin-top:4px;}
+      --blue: #3b6fd6;              /* xanh dương nhạt — CTA, link, nhấn chính */
+      --blue-light: #7aa4ec;
+      --blue-deep: #234c9e;
+      --blue-soft: #e8f0fd;
+      --blue-pale: rgba(59,111,214,.1);
 
-  footer{border-top:1px solid var(--line);padding:36px 0;color:var(--text-dim);font-size:13.5px;}
-  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+      --red: #d6473f;               /* đỏ — chỉ dùng cảnh báo / rủi ro */
+      --red-deep: #ad332c;
+      --red-ink: #8a2924;
+      --red-soft: #fceeed;
 
-  @media (prefers-reduced-motion:reduce){
-    *{transition:none !important;scroll-behavior:auto !important;}
-  }
-</style>
+      --white: #fff;
+      --muted: rgba(16,35,63,.6);
+      --muted-strong: rgba(16,35,63,.84);
+      --dark-muted: rgba(16,35,63,.62);
+      --line: rgba(16,35,63,.12);
+      --dark-line: rgba(16,35,63,.14);
+      --shadow: 0 1.4rem 3rem rgba(20,40,80,.1);
+      --max: 1200px;
+      --ease-out: cubic-bezier(.22,.9,.26,1);
+      --nav-h: 5.25rem;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      min-width: 320px;
+      overflow-x: hidden;
+      background: var(--bg);
+      color: var(--deep);
+      font-family: "Be Vietnam Pro", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a, button { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+    img { max-width: 100%; height: auto; }
+
+    ::selection { background: var(--gold-light); color: var(--deep); }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea, select { font: inherit; }
+    button { cursor: pointer; }
+    svg { display: block; }
+    .wrap { width: min(var(--max), calc(100% - 3rem)); margin: 0 auto; }
+    .skip-link {
+      position: absolute;
+      z-index: 99999;
+      left: 1rem;
+      top: -5rem;
+      padding: .75rem 1rem;
+      background: var(--gold-light);
+      color: var(--deep);
+      border-radius: .4rem;
+      font-weight: 700;
+    }
+    .skip-link:focus { top: 1rem; outline: 3px solid var(--blue); }
+
+    .preloader {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: grid;
+      place-items: center;
+      background: var(--bg);
+      transition: opacity .65s ease, visibility .65s ease;
+    }
+    .preloader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+    .preloader.hidden * { animation-play-state: paused !important; }
+    .preloader-mark {
+      display: grid;
+      place-items: center;
+      gap: 1rem;
+      color: var(--blue-deep);
+      font-size: clamp(1.4rem, 3.2vw, 1.85rem);
+      font-weight: 300;
+      letter-spacing: .12em;
+      opacity: 0;
+      animation: preloaderLogoFade 1.6s var(--ease-out) forwards;
+      position: relative;
+    }
+    .preloader-mark::before {
+      content: "";
+      position: absolute;
+      inset: 50% auto auto 50%;
+      width: 11rem;
+      height: 11rem;
+      margin: -5.5rem;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(59,111,214,.18), rgba(201,150,46,.1) 55%, transparent 72%);
+      filter: blur(2px);
+      z-index: -1;
+      opacity: 0;
+      transform: scale(.45);
+      animation: powerGlow 1.7s var(--ease-out) forwards;
+    }
+    @keyframes powerGlow {
+      0%   { opacity: 0; transform: scale(.45); }
+      45%  { opacity: .9; transform: scale(1); }
+      75%  { opacity: .55; }
+      100% { opacity: .38; transform: scale(1.06); }
+    }
+    .preloader-mark img {
+      width: clamp(5rem, 14vw, 6.5rem);
+      height: clamp(5rem, 14vw, 6.5rem);
+      object-fit: contain;
+      border-radius: .9rem;
+      background: var(--surface);
+      padding: .6rem;
+      box-shadow: 0 0 0 1px rgba(59,111,214,.18), 0 .6rem 2rem rgba(20,40,80,.12);
+    }
+    @keyframes preloaderLogoFade {
+      0% { opacity: 0; transform: translateY(.4rem) scale(.96); filter: brightness(.92); }
+      55% { opacity: 1; transform: translateY(0) scale(1); filter: brightness(1.04); }
+      100% { opacity: 1; transform: translateY(0) scale(1); filter: brightness(1); }
+    }
+    .preloader-mark::after {
+      content: "";
+      width: min(12rem, 60vw);
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--blue), transparent);
+      animation: loaderLine 1.1s ease-in-out infinite;
+      margin-top: .1rem;
+    }
+    @keyframes loaderLine {
+      0%, 100% { transform: scaleX(.28); opacity: .35; }
+      50% { transform: scaleX(1); opacity: 1; }
+    }
+
+    header {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 1000;
+      transition: background .35s ease, border-color .35s ease, transform .42s var(--ease-out), box-shadow .35s ease;
+      border-bottom: 1px solid transparent;
+      background: rgba(255,255,255,.7);
+    }
+    header.scrolled {
+      background: rgba(255,255,255,.9);
+      border-color: rgba(16,35,63,.08);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 .6rem 2rem rgba(20,40,80,.08);
+    }
+    header.hidden-up { transform: translateY(-110%); }
+    .nav {
+      min-height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      color: var(--deep);
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: .8rem;
+      min-width: max-content;
+      font-weight: 650;
+      letter-spacing: .02em;
+      color: var(--deep);
+    }
+    .logo-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: .55rem;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(59,111,214,.32);
+      color: var(--blue);
+      background: var(--surface);
+      overflow: hidden;
+    }
+    .logo-icon img { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
+    .logo span span { color: var(--blue); font-weight: 300; }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      color: rgba(16,35,63,.68);
+      font-size: .94rem;
+    }
+    nav a {
+      padding: .4rem 0;
+      border-bottom: 1px solid transparent;
+      transition: color .25s ease, border-color .25s ease;
+    }
+    nav a:hover, nav a:focus-visible { color: var(--deep); border-color: var(--blue); }
+    .nav-call {
+      min-height: 2.75rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 1.1rem;
+      border: 1px solid var(--blue);
+      border-radius: 999px;
+      color: var(--blue-deep);
+      font-weight: 650;
+      transition: background .25s ease, color .25s ease, transform .25s ease;
+      white-space: nowrap;
+    }
+    .nav-call:hover { background: var(--blue); color: var(--white); transform: translateY(-1px); }
+    .nav-call:active { transform: translateY(0) scale(.95); }
+
+    .burger {
+      display: none;
+      width: 2.9rem;
+      height: 2.9rem;
+      place-items: center;
+      border: 1px solid rgba(59,111,214,.3);
+      border-radius: .6rem;
+      background: var(--surface);
+      color: var(--blue);
+      cursor: pointer;
+      transition: background .25s ease, color .25s ease;
+      position: relative;
+      z-index: 1301;
+    }
+    .burger:active { background: var(--blue-soft); }
+    .burger i, .burger i::before, .burger i::after {
+      display: block;
+      width: 1.15rem;
+      height: 2px;
+      border-radius: 2px;
+      background: currentColor;
+      position: absolute;
+      left: 50%;
+      margin-left: -.575rem;
+      transition: transform .32s var(--ease-out), opacity .25s ease;
+    }
+    .burger i::before { content: ""; bottom: .34rem; }
+    .burger i::after  { content: ""; bottom: -.34rem; }
+    .burger.active i                { background: transparent; }
+    .burger.active i::before { transform: translateY(.34rem) rotate(45deg); }
+    .burger.active i::after  { transform: translateY(-.34rem) rotate(-45deg); }
+
+    .drawer {
+      position: fixed;
+      inset: 0;
+      z-index: 1300;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: .4rem;
+      padding: 6rem 2rem 2rem;
+      background: rgba(255,255,255,.98);
+      backdrop-filter: blur(22px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .4s var(--ease-out), visibility .4s var(--ease-out);
+    }
+    .drawer.open { opacity: 1; visibility: visible; }
+    .drawer a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.05rem .4rem;
+      color: var(--deep);
+      font-family: "Sora", "Be Vietnam Pro", sans-serif;
+      font-weight: 300;
+      font-size: clamp(1.35rem, 6vw, 1.7rem);
+      border-bottom: 1px solid rgba(16,35,63,.1);
+      transform: translateY(.6rem);
+      opacity: 0;
+      transition: transform .4s var(--ease-out), opacity .4s var(--ease-out), color .2s ease;
+    }
+    .drawer.open a { transform: none; opacity: 1; }
+    .drawer a i { color: var(--blue); font-size: .78rem; font-style: normal; letter-spacing: .08em; text-transform: uppercase; }
+    .drawer a:active { color: var(--blue); }
+
+    .mobile-cta-bar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1100;
+      display: none;
+      gap: .6rem;
+      padding: .6rem 1rem calc(.6rem + env(safe-area-inset-bottom));
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(18px);
+      border-top: 1px solid rgba(16,35,63,.1);
+      box-shadow: 0 -.5rem 1.6rem rgba(20,40,80,.08);
+    }
+    .mobile-cta-bar a {
+      flex: 1;
+      min-height: 3.15rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      border-radius: 999px;
+      font-weight: 650;
+      transition: transform .25s var(--ease-out), background .25s ease, color .25s ease;
+    }
+    .mobile-cta-bar a:active { transform: scale(.965); }
+    .mobile-cta-bar.hid { display: none; }
+    .mobile-cta-bar .call    { border: 1px solid var(--blue); color: var(--blue-deep); background: transparent; }
+    .mobile-cta-bar .call svg { flex: none; }
+    .mobile-cta-bar .contact { background: var(--blue); color: var(--white); }
+
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      padding: 8rem 0 4.25rem;
+      background:
+        radial-gradient(circle at 74% 38%, rgba(59,111,214,.12), transparent 32%),
+        radial-gradient(circle at 14% 82%, rgba(201,150,46,.14), transparent 34%),
+        linear-gradient(160deg, #ffffff 0%, #f5f8fd 55%, #eef3fb 100%);
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .hero-bg::before {
+      content: "";
+      position: absolute;
+      inset: auto -8rem -13rem auto;
+      width: 50rem;
+      height: 50rem;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,150,46,.12), transparent 63%);
+      filter: blur(4px);
+    }
+    .hero-bg svg {
+      position: absolute;
+      inset: 7rem auto auto 50%;
+      width: 54rem;
+      max-width: none;
+      color: rgba(59,111,214,.08);
+      transform: translateX(-8%);
+    }
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(26rem, .85fr);
+      align-items: center;
+      gap: 4rem;
+    }
+    .hero-copy {
+      max-width: 56rem;
+      opacity: 0;
+      transform: translateY(1.2rem);
+      animation: heroCopyIn .8s cubic-bezier(.22,.8,.24,1) .72s forwards;
+    }
+    @keyframes heroCopyIn { to { opacity: 1; transform: translateY(0); } }
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      color: var(--blue-deep);
+      font-size: .9rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 1.6rem;
+    }
+    .hero-kicker::before {
+      content: "";
+      width: 1.6rem;
+      height: 1px;
+      background: var(--blue);
+    }
+    h1, h2, h3, h4 {
+      font-family: "Sora", "Be Vietnam Pro", system-ui, sans-serif;
+      font-weight: 300;
+      text-wrap: balance;
+      color: var(--deep);
+    }
+    h1 {
+      font-size: clamp(2.35rem, calc(1.05rem + 4.1vw), 6.4rem);
+      line-height: 1.16;
+      letter-spacing: -.02em;
+      text-wrap: balance;
+      max-width: 13ch;
+      background: linear-gradient(118deg, var(--deep) 12%, var(--blue) 92%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    h2 {
+      font-size: clamp(1.95rem, calc(1.05rem + 3.6vw), 4.4rem);
+      line-height: 1.24;
+      letter-spacing: -.015em;
+    }
+    h3 {
+      font-size: clamp(1.2rem, calc(1rem + .6vw), 1.4rem);
+      line-height: 1.34;
+      letter-spacing: -.01em;
+    }
+    h4 { line-height: 1.2; letter-spacing: -.01em; }
+    h1[data-glitch] { position: relative; }
+    h1[data-glitch]::before,
+    h1[data-glitch]::after {
+      content: attr(data-text);
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0;
+      background: none;
+      -webkit-text-fill-color: currentColor;
+    }
+    h1[data-glitch]::before { color: var(--blue-light); clip-path: inset(0 0 100% 0); }
+    h1[data-glitch]::after  { color: var(--gold-light); clip-path: inset(100% 0 0 0); }
+    h1[data-glitch].glitch-play::before { animation: glitchClipBefore .5s steps(2) 1 both; }
+    h1[data-glitch].glitch-play::after  { animation: glitchClipAfter .5s steps(2) 1 both .05s; }
+    @keyframes glitchClipBefore {
+      0%   { opacity: .9; clip-path: inset(10% 0 60% 0); transform: translate(-.35rem,0); }
+      50%  { opacity: .7; clip-path: inset(45% 0 20% 0); transform: translate(.3rem,0); }
+      100% { opacity: 0;  clip-path: inset(0 0 100% 0); transform: translate(0,0); }
+    }
+    @keyframes glitchClipAfter {
+      0%   { opacity: .9; clip-path: inset(55% 0 5% 0); transform: translate(.35rem,0); }
+      50%  { opacity: .7; clip-path: inset(20% 0 45% 0); transform: translate(-.3rem,0); }
+      100% { opacity: 0;  clip-path: inset(100% 0 0 0); transform: translate(0,0); }
+    }
+    .hero-lead {
+      max-width: 39rem;
+      margin-top: 1.5rem;
+      color: rgba(16,35,63,.66);
+      font-size: clamp(1rem, calc(.95rem + .3vw), 1.14rem);
+      font-weight: 300;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2.35rem;
+    }
+    .btn {
+      min-height: 3.15rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .65rem;
+      padding: 0 1.45rem;
+      border-radius: 999px;
+      border: 1px solid rgba(16,35,63,.16);
+      font-weight: 650;
+      transition: transform .28s ease, background .28s ease, color .28s ease, border-color .28s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn:active { transform: translateY(0) scale(.96); }
+    .btn-primary { background: var(--blue); color: var(--white); border-color: transparent; box-shadow: 0 .6rem 1.6rem rgba(59,111,214,.28); }
+    .btn-primary:hover { background: var(--blue-deep); }
+    .btn-primary:active { background: var(--blue-deep); }
+    .btn-secondary { color: var(--deep); background: var(--surface); border-color: rgba(16,35,63,.18); }
+    .btn-secondary:hover { background: var(--blue-soft); border-color: var(--blue); }
+    .btn:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible,
+    select:focus-visible,
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid rgba(59,111,214,.55);
+      outline-offset: 3px;
+      outline-color: var(--blue);
+    }
+
+    .hero-cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 1rem;
+      margin-top: 3.25rem;
+      max-width: 48rem;
+    }
+    .hero-card {
+      position: relative;
+      min-height: 9.6rem;
+      padding: 1.15rem;
+      overflow: hidden;
+      border: 1px solid var(--dark-line);
+      border-radius: .75rem;
+      background: var(--surface);
+      box-shadow: 0 .5rem 1.4rem rgba(20,40,80,.06);
+    }
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), transparent);
+      opacity: .8;
+    }
+    .hero-card strong {
+      display: block;
+      color: var(--blue-deep);
+      font-size: 1.55rem;
+      line-height: 1;
+      font-weight: 550;
+      margin-bottom: .65rem;
+    }
+    .hero-card span {
+      display: block;
+      color: var(--dark-muted);
+      font-size: .9rem;
+    }
+
+    .panel-stage {
+      position: relative;
+      min-height: 39rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(1.4rem) scale(.98);
+      animation: panelIn .85s cubic-bezier(.22,.8,.24,1) .95s forwards;
+    }
+    @keyframes panelIn { to { opacity: 1; transform: translateY(0) scale(1); } }
+    .panel {
+      position: relative;
+      width: min(100%, 28rem);
+      padding: 1.25rem;
+      border-radius: .85rem;
+      background: linear-gradient(145deg, #1c2c52, #0b1730);
+      border: 1px solid rgba(255,255,255,.13);
+      box-shadow: var(--shadow);
+    }
+    .panel::before {
+      content: "";
+      position: absolute;
+      inset: 1rem;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: .62rem;
+      pointer-events: none;
+    }
+    .panel-top {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      gap: .8rem;
+      color: rgba(255,255,255,.6);
+      font-size: .74rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .panel-status { color: var(--gold-light); white-space: nowrap; }
+    .breaker-board {
+      position: relative;
+      z-index: 1;
+      padding: 1.35rem 1.1rem 1.45rem;
+      border-radius: .65rem;
+      background: #e3e8f3;
+      border: 1px solid rgba(255,255,255,.28);
+    }
+    .busbar {
+      position: relative;
+      height: .55rem;
+      margin: .2rem .35rem 1.3rem;
+      border-radius: 999px;
+      overflow: hidden;
+      background: rgba(58,99,176,.22);
+    }
+    .busbar::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      transform: scaleX(0);
+      transform-origin: left center;
+      background: linear-gradient(90deg, var(--blue), var(--gold-light));
+      animation: busOn .9s cubic-bezier(.22,.8,.24,1) 1.32s forwards;
+    }
+    .busbar::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      width: 30%;
+      background: linear-gradient(90deg, transparent, rgba(248,228,160,.95), transparent);
+      transform: translateX(-130%);
+      opacity: 0;
+      animation: busShine 1.7s var(--ease-out) 2.25s infinite;
+    }
+    @keyframes busOn { to { transform: scaleX(1); } }
+    @keyframes busShine {
+      0%   { transform: translateX(-130%); opacity: 0; }
+      12%  { opacity: 1; }
+      55%  { opacity: 1; }
+      75%  { transform: translateX(360%); opacity: 0; }
+      100% { transform: translateX(360%); opacity: 0; }
+    }
+    .breaker-grid {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0,1fr));
+      gap: .56rem;
+    }
+    .breaker {
+      position: relative;
+      min-height: 5.55rem;
+      border-radius: .42rem;
+      border: 1px solid #c7c8c1;
+      background: linear-gradient(180deg, #fff, #d7dfef);
+      box-shadow: inset 0 -.8rem 1.2rem rgba(7,16,38,.08);
+    }
+    .breaker::after {
+      content: attr(data-label);
+      position: absolute;
+      inset: .48rem .25rem auto;
+      color: #55618a;
+      text-align: center;
+      font-size: .56rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+    }
+    .breaker::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 2.55rem;
+      width: 1.1rem;
+      height: 1.9rem;
+      border-radius: .28rem;
+      background: #a7b0cf;
+      transform: translateX(-50%) translateY(.75rem);
+      box-shadow: inset 0 -.5rem .8rem rgba(7,16,38,.14);
+      animation: switchOn .48s cubic-bezier(.22,.8,.24,1) forwards;
+      animation-delay: calc(1.55s + (var(--i) * .1s));
+    }
+    @keyframes switchOn {
+      to {
+        transform: translateX(-50%) translateY(-.12rem);
+        background: linear-gradient(180deg, #f4d98a, #c9a333);
+      }
+    }
+    .wire-lanes {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: .7rem;
+      margin: 1.35rem .35rem 0;
+    }
+    .wire {
+      height: 2.2rem;
+      border-radius: 0 0 1rem 1rem;
+      background:
+        linear-gradient(var(--wire), var(--wire)) left top / 3px 100% no-repeat,
+        linear-gradient(var(--wire), var(--wire)) left bottom / 100% 3px no-repeat;
+      opacity: .25;
+      transform-origin: top center;
+      transform: scaleY(.12);
+      animation: wireOn .45s ease-out forwards;
+      animation-delay: calc(2.45s + (var(--d) * .11s));
+    }
+    @keyframes wireOn { to { opacity: .88; transform: scaleY(1); } }
+    .panel-caption {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .85rem;
+      margin-top: 1rem;
+      color: rgba(255,255,255,.6);
+      font-size: .82rem;
+    }
+    .panel-caption b { display: block; color: var(--white); margin-bottom: .2rem; }
+    /* Ghi chú nổi: ĐÃ SỬA — trước đây absolute + bottom âm khiến khối này đè lên .panel-caption.
+       Nay để trong luồng bình thường, nằm hẳn dưới panel, không chồng lấp nội dung. */
+    .floating-note {
+      position: relative;
+      z-index: 2;
+      width: min(100%, 28rem);
+      margin-top: 1rem;
+      padding: 1rem 1.15rem;
+      border: 1px solid var(--dark-line);
+      border-radius: .7rem;
+      background: var(--surface);
+      color: var(--muted-strong);
+      font-size: .8rem;
+      line-height: 1.5;
+      box-shadow: 0 .8rem 1.8rem rgba(20,40,80,.08);
+    }
+    .floating-note b {
+      display: block;
+      color: var(--blue-deep);
+      font-size: .88rem;
+      margin-bottom: .35rem;
+    }
+
+    section {
+      position: relative;
+      overflow: hidden;
+      padding: 7rem 0;
+      scroll-margin-top: 5.4rem;
+    }
+    .section-dark { background: var(--bg-soft); color: var(--deep); }
+    .section-forest { background: var(--forest); color: var(--deep); }
+    .section-light { background: var(--ivory); color: var(--deep); }
+    .section-linen { background: var(--linen); color: var(--deep); }
+    .section-head {
+      max-width: 46rem;
+      margin-bottom: 3rem;
+    }
+    .section-head.center { margin-inline: auto; text-align: center; }
+    .section-tag {
+      display: block;
+      color: var(--gold-ink);
+      font-size: .82rem;
+      font-weight: 650;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .risk .section-tag { color: var(--gold-deep); }
+    .section-head h2 {
+      max-width: 12ch;
+    }
+    .section-head.center h2 { margin-inline: auto; }
+    .section-head p {
+      margin-top: 1.1rem;
+      color: var(--dark-muted);
+      font-weight: 300;
+      font-size: clamp(1rem, calc(.95rem + .24vw), 1.1rem);
+      max-width: 62ch;
+    }
+    .section-head p a { color: var(--blue-deep); font-weight: 600; border-bottom: 1px solid rgba(59,111,214,.35); }
+
+    .reveal {
+      opacity: 0;
+      will-change: transform, opacity;
+      transform: translateY(.9rem);
+      transition: opacity .7s var(--ease-out), transform .7s var(--ease-out);
+      transition-delay: var(--ds, 0s);
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    .hero-glow, .risk-glow {
+      position: absolute;
+      inset: -25% -12%;
+      z-index: 0;
+      pointer-events: none;
+      will-change: transform;
+      background:
+        radial-gradient(circle at 28% 32%, rgba(59,111,214,.16), transparent 58%),
+        radial-gradient(circle at 76% 68%, rgba(201,150,46,.12), transparent 55%);
+    }
+    .risk-glow {
+      background:
+        radial-gradient(circle at 74% 22%, rgba(201,150,46,.12), transparent 55%),
+        radial-gradient(circle at 22% 78%, rgba(59,111,214,.14), transparent 58%);
+    }
+
+    .particle-field { position: absolute; inset: 0; z-index: 1; overflow: hidden; pointer-events: none; }
+    .particle {
+      position: absolute;
+      left: var(--x, 50%);
+      top: var(--y, 50%);
+      width: var(--size, 3px);
+      height: var(--size, 3px);
+      border-radius: 50%;
+      background: var(--gold-light);
+      opacity: 0;
+      filter: blur(.3px);
+      animation: particleFloat var(--dur, 6s) ease-in-out var(--delay, 0s) infinite;
+    }
+    .particle.is-blue { background: var(--blue-light); }
+    @keyframes particleFloat {
+      0%   { opacity: 0; transform: translate(0,0) scale(.6); }
+      12%  { opacity: var(--op, .5); }
+      50%  { opacity: var(--op, .5); transform: translate(var(--dx, 10px), var(--dy, -20px)) scale(1); }
+      88%  { opacity: 0; }
+      100% { opacity: 0; transform: translate(calc(var(--dx, 10px) * 1.7), calc(var(--dy, -20px) * 1.7)) scale(.6); }
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+    .gallery-item {
+      position: relative;
+      border-radius: .65rem;
+      overflow: hidden;
+      border: 1px solid var(--dark-line);
+      background: var(--surface);
+      transform-style: preserve-3d;
+      will-change: transform;
+      transition: transform .22s var(--ease-out), border-color .35s ease;
+    }
+    .gallery-item:hover { border-color: var(--gold); }
+    .gallery-item img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      filter: saturate(.96);
+    }
+    .gallery-item span {
+      position: absolute;
+      inset: auto 0 0;
+      padding: 1.25rem .8rem .85rem;
+      font-size: .82rem;
+      color: var(--white);
+      background: linear-gradient(0deg, rgba(16,35,63,.88), transparent);
+    }
+    .gallery-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem 2rem;
+      margin: .25rem 0 1.5rem;
+    }
+    .gallery-count {
+      display: flex;
+      flex-direction: column;
+    }
+    .gallery-count b {
+      font-family: "Sora", system-ui, sans-serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 600;
+      color: var(--blue-deep);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+    .gallery-count span {
+      margin-top: .35rem;
+      font-size: .85rem;
+      color: var(--dark-muted);
+      letter-spacing: .02em;
+    }
+    .gallery-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+    }
+    .chip {
+      padding: .5rem .85rem;
+      border-radius: 999px;
+      border: 1px solid var(--dark-line);
+      background: var(--surface);
+      color: var(--muted-strong);
+      font-size: .84rem;
+      font-weight: 500;
+      letter-spacing: .02em;
+      transition: background .22s var(--ease-out), color .22s var(--ease-out), border-color .22s var(--ease-out), transform .15s var(--ease-out);
+    }
+    .chip:hover { border-color: var(--blue); color: var(--deep); }
+    .chip:active { transform: scale(.96); }
+    .chip.is-active {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: var(--white);
+    }
+    .chip:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+    /* ĐÃ SỬA: ảnh không khớp bộ lọc bị display:none (gỡ khỏi luồng) thay vì chỉ ẩn opacity,
+       nên lưới không còn để lại khoảng trống lớn khi lọc. Xem hàm applyFilter() trong JS. */
+    .gallery-item.is-hidden { display: none; }
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(10,18,36,.94);
+      padding: 1rem;
+      transition: opacity .28s var(--ease-out);
+    }
+    .lightbox.hidden { opacity: 0; pointer-events: none; }
+    .lb-stage {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 92vw;
+      max-height: 86vh;
+      border-radius: 1rem;
+      overflow: hidden;
+      background: rgba(255,255,255,.04);
+      box-shadow: 0 2rem 5rem rgba(0,0,0,.5);
+    }
+    .lb-stage img {
+      max-width: 92vw;
+      max-height: 86vh;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+    .lb-caption {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      padding: 1.1rem 1rem .9rem;
+      text-align: center;
+      font-size: .92rem;
+      color: var(--white);
+      background: linear-gradient(0deg, rgba(7,16,38,.92), transparent);
+    }
+    .lb-counter {
+      position: absolute;
+      top: .8rem;
+      right: 1rem;
+      font-size: .8rem;
+      color: rgba(255,255,255,.75);
+      font-variant-numeric: tabular-nums;
+      letter-spacing: .04em;
+    }
+    .lb-close, .lb-prev, .lb-next {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.28);
+      background: rgba(255,255,255,.08);
+      color: var(--white);
+      font-size: 1.3rem;
+      line-height: 1;
+      transition: background .2s var(--ease-out), transform .15s var(--ease-out);
+      z-index: 2;
+    }
+    .lb-close { top: 1.1rem; right: 1.1rem; }
+    .lb-prev { left: 1.1rem; top: 50%; transform: translateY(-50%); }
+    .lb-next { right: 1.1rem; top: 50%; transform: translateY(-50%); }
+    .lb-prev:hover, .lb-next:hover, .lb-close:hover { background: var(--gold-deep); border-color: var(--gold-deep); }
+    .lb-prev:active, .lb-next:active, .lb-close:active { transform: translateY(-50%) scale(.94); }
+    .lb-close:active { transform: scale(.94); }
+    .lb-prev, .lb-next, .lb-close { will-change: transform; }
+    .lb-prev, .lb-next, .lb-close:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+    .trust {
+      padding: 0;
+      background: var(--ivory);
+      color: var(--deep);
+    }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-left: 1px solid var(--dark-line);
+      border-right: 1px solid var(--dark-line);
+    }
+    .trust-item {
+      min-height: 10rem;
+      padding: 2rem 1.6rem;
+      border-right: 1px solid var(--dark-line);
+    }
+    .trust-item:last-child { border-right: 0; }
+    .trust-item strong {
+      display: block;
+      color: var(--blue-deep);
+      font-size: clamp(1.9rem, calc(1.4rem + 1.6vw), 2.35rem);
+      line-height: 1;
+      font-weight: 300;
+      margin-bottom: .75rem;
+    }
+    .trust-item span { color: var(--dark-muted); font-size: .95rem; }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.1rem;
+    }
+    /* ĐÃ SỬA: service-card trước đây dùng chữ/viền trắng trong suốt trên nền sáng
+       (.section-forest) nên gần như vô hình. Nay dùng bảng màu tối/xanh dương cho nền sáng. */
+    .service-card {
+      min-height: 18rem;
+      position: relative;
+      padding: 1.6rem;
+      border: 1px solid var(--dark-line);
+      border-radius: .75rem;
+      background: var(--surface);
+      overflow: hidden;
+      transform-style: preserve-3d;
+      will-change: transform;
+      box-shadow: 0 .5rem 1.4rem rgba(20,40,80,.05);
+      transition: transform .22s var(--ease-out), border-color .3s ease, box-shadow .3s ease;
+    }
+    .service-card:hover { border-color: var(--blue); box-shadow: 0 1rem 2.2rem rgba(20,40,80,.1); }
+    .service-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(230px circle at var(--gx, 50%) var(--gy, 50%), rgba(59,111,214,.1), transparent 62%);
+      opacity: 0;
+      transition: opacity .32s ease;
+      pointer-events: none;
+    }
+    .service-card:hover::after, .service-card.is-glowing::after { opacity: 1; }
+    .service-card svg { width: 3.5rem; height: 3.5rem; color: var(--blue); margin-bottom: 1.6rem; }
+    .service-card h3 { font-size: 1.45rem; margin-bottom: .75rem; color: var(--deep); }
+    .service-card p { color: var(--dark-muted); font-size: .96rem; font-weight: 300; }
+    .service-card p a { color: var(--blue-deep); font-weight: 600; border-bottom: 1px solid rgba(59,111,214,.35); }
+    .service-card small {
+      display: inline-flex;
+      margin-top: 1.2rem;
+      color: var(--gold-ink);
+      font-size: .8rem;
+      font-weight: 650;
+      letter-spacing: .02em;
+    }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      margin-top: 4rem;
+    }
+    .timeline::before,
+    .timeline::after {
+      content: "";
+      position: absolute;
+      left: 7%;
+      right: 7%;
+      top: 2.15rem;
+      height: 1px;
+      background: var(--dark-line);
+    }
+    .timeline::after {
+      background: linear-gradient(90deg, var(--blue), var(--gold));
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 1.2s cubic-bezier(.22,.8,.24,1);
+    }
+    .timeline.visible::after { transform: scaleX(1); }
+    .step {
+      position: relative;
+      z-index: 2;
+      padding-right: 1.5rem;
+    }
+    .step-num {
+      width: 4.3rem;
+      height: 4.3rem;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      border: 1px solid var(--blue);
+      background: var(--ivory);
+      color: var(--blue-deep);
+      font-size: 1.3rem;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+    }
+    .step h3 { font-size: 1.22rem; margin-bottom: .65rem; }
+    .step p { color: var(--dark-muted); font-size: .94rem; }
+    .step p a { color: var(--blue-deep); font-weight: 600; border-bottom: 1px solid rgba(59,111,214,.35); }
+
+    /* Section rủi ro: nền vàng nhạt để tách biệt cảnh báo, dùng ĐỎ cho "sai" và XANH/VÀNG cho "đúng" */
+    .risk {
+      background:
+        radial-gradient(circle at 82% 18%, rgba(201,150,46,.1), transparent 27%),
+        var(--bg-linen);
+      color: var(--deep);
+    }
+    .compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.15rem;
+    }
+    .compare-card {
+      padding: 2rem;
+      border: 1px solid var(--dark-line);
+      border-radius: .75rem;
+      background: var(--surface);
+      transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+    }
+    .compare-card:hover {
+      transform: translateY(-.28rem);
+      box-shadow: 0 1rem 2.4rem rgba(20,40,80,.1);
+    }
+    .compare-card h3 { font-size: 2rem; margin-bottom: 1.4rem; }
+    .compare-card.bad { border-color: rgba(214,71,63,.35); }
+    .compare-card.bad h3 { color: var(--red-deep); }
+    .compare-card.good { border-color: rgba(59,111,214,.3); }
+    .compare-card.good h3 { color: var(--blue-deep); }
+    .compare ul { list-style: none; display: grid; gap: 1rem; }
+    .compare li {
+      display: grid;
+      grid-template-columns: 1.6rem 1fr;
+      gap: .85rem;
+      color: var(--dark-muted);
+      font-weight: 300;
+    }
+    .compare li b { display: block; color: var(--deep); font-weight: 650; margin-bottom: .18rem; }
+    .compare-card.bad .symbol { color: var(--red); font-weight: 700; }
+    .compare-card.good .symbol { color: var(--blue); font-weight: 700; }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: 24rem 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .faq-intro h2 { max-width: 12ch; }
+    .faq-intro p { color: var(--dark-muted); margin-top: 1rem; max-width: 42ch; }
+    .faq-list { display: grid; gap: .8rem; }
+    .faq-item {
+      border: 1px solid var(--dark-line);
+      border-radius: .65rem;
+      background: var(--surface);
+      overflow: hidden;
+    }
+    .faq-toggle {
+      width: 100%;
+      min-height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      border: 0;
+      background: transparent;
+      color: var(--deep);
+      padding: 1rem 1.2rem;
+      font-weight: 650;
+      text-align: left;
+    }
+    .faq-toggle span:last-child { color: var(--blue-deep); font-size: 1.3rem; transition: transform .25s var(--ease-out); }
+    .faq-item.open .faq-toggle span:last-child { transform: rotate(45deg); }
+    .faq-answer {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows .32s var(--ease-out);
+    }
+    .faq-answer p {
+      overflow: hidden;
+      padding: 0 1.2rem;
+      color: var(--dark-muted);
+      font-size: .96rem;
+    }
+    .faq-answer p a { color: var(--blue-deep); font-weight: 600; border-bottom: 1px solid rgba(59,111,214,.35); }
+    .faq-item.open .faq-answer { grid-template-rows: 1fr; }
+    .faq-item.open .faq-answer p { padding-bottom: 1.15rem; }
+
+    /* Khối liên hệ: chuyển từ thẻ tối sang thẻ sáng nổi bật bằng viền + đổ bóng xanh dương */
+    .contact-panel {
+      display: grid;
+      grid-template-columns: 1fr 29rem;
+      gap: 3rem;
+      align-items: stretch;
+      padding: 3rem;
+      border: 1px solid var(--dark-line);
+      border-radius: .9rem;
+      background: linear-gradient(135deg, var(--blue-soft), var(--surface));
+      box-shadow: var(--shadow);
+    }
+    .contact-copy h2 { max-width: 13ch; }
+    .contact-copy p { color: var(--dark-muted); font-weight: 300; margin: 1.3rem 0 2rem; max-width: 42rem; }
+    .contact-facts { display: grid; gap: .7rem; color: var(--muted-strong); font-size: .96rem; }
+    .contact-facts b { color: var(--blue-deep); }
+    form {
+      display: grid;
+      gap: .9rem;
+      padding: 1.25rem;
+      border-radius: .75rem;
+      background: var(--ivory);
+      color: var(--deep);
+      border: 1px solid var(--dark-line);
+    }
+    label {
+      display: grid;
+      gap: .42rem;
+      font-size: .82rem;
+      font-weight: 650;
+      color: var(--muted-strong);
+    }
+    input, textarea, select {
+      width: 100%;
+      min-height: 3rem;
+      border: 1px solid rgba(16,35,63,.16);
+      border-radius: .42rem;
+      background: rgba(255,255,255,.9);
+      color: var(--deep);
+      padding: .75rem .85rem;
+      font-size: 1rem;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    input:focus, textarea:focus, select:focus {
+      border-color: var(--blue);
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(59,111,214,.18);
+    }
+    textarea { resize: vertical; min-height: 7rem; }
+    .form-note { color: var(--dark-muted); font-size: .82rem; }
+    .form-status { min-height: 1.2rem; color: var(--blue-deep); font-size: .88rem; font-weight: 650; }
+    form .btn { width: 100%; border: 0; min-height: 3.15rem; }
+
+    footer {
+      padding: 3rem 0;
+      border-top: 1px solid var(--dark-line);
+      color: var(--dark-muted);
+      background: var(--surface);
+      font-size: .94rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr 1fr;
+      gap: 2rem;
+    }
+    footer b { display: block; color: var(--deep); margin-bottom: .45rem; font-weight: 650; }
+    footer a { color: var(--blue-deep); font-weight: 650; }
+
+    @media (max-width: 1080px) {
+      nav { display: none; }
+      .burger { display: grid; }
+      .hero-grid, .contact-panel, .faq-layout { grid-template-columns: 1fr; }
+      .panel-stage { min-height: auto; }
+      .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+      .timeline { grid-template-columns: 1fr; gap: 2rem; }
+      .timeline::before,
+      .timeline::after {
+        left: 2.15rem;
+        right: auto;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        transform-origin: top center;
+      }
+      .timeline::after { transform: scaleY(0); }
+      .timeline.visible::after { transform: scaleY(1); }
+      .step {
+        display: grid;
+        grid-template-columns: 5.4rem 1fr;
+        padding-right: 0;
+      }
+      .step-num { margin-bottom: 0; }
+    }
+    @media (max-width: 820px) {
+      .wrap { width: min(100% - 2rem, var(--max)); }
+      body { padding-bottom: calc(4.6rem + env(safe-area-inset-bottom)); }
+      .mobile-cta-bar { display: grid; grid-template-columns: 1fr 1fr; }
+      .nav { min-height: 4.5rem; }
+      .logo span { font-size: .95rem; }
+      .nav-call { min-height: 2.75rem; padding: 0 .9rem; font-size: .88rem; }
+      .drawer { justify-content: flex-start; padding: 7rem 2rem calc(5.5rem + env(safe-area-inset-bottom)); }
+      .hero { padding-top: 6.5rem; }
+      h1 { font-size: clamp(2.85rem, 14vw, 4rem); max-width: 9.8ch; }
+      .hero-kicker { font-size: .78rem; align-items: flex-start; }
+      .hero-cards, .trust-grid, .service-grid, .compare, .footer-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .trust-item { border-right: 0; border-bottom: 1px solid var(--dark-line); min-height: auto; }
+      .trust-item:last-child { border-bottom: 0; }
+      section { padding: 5rem 0; }
+      .panel { width: 100%; }
+      .floating-note { width: 100%; }
+      .contact-panel { padding: 1.25rem; gap: 1.5rem; }
+    }
+    @media (max-width: 480px) {
+      .logo-icon { width: 2.2rem; height: 2.2rem; }
+      .logo span span { display: none; }
+      .nav-call { font-size: .82rem; padding: 0 .75rem; }
+      .hero-actions .btn { width: 100%; }
+      .breaker-grid { grid-template-columns: repeat(3, 1fr); }
+      .breaker { min-height: 4.9rem; }
+      .wire-lanes { grid-template-columns: repeat(2, 1fr); }
+      .panel-top { font-size: .66rem; }
+      .step { grid-template-columns: 4.3rem 1fr; }
+      .step-num { width: 3.6rem; height: 3.6rem; }
+      .timeline::before, .timeline::after { left: 1.8rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .001ms !important;
+      }
+      .preloader { display: none; }
+      .hero-copy, .panel-stage, .reveal { opacity: 1; transform: none; }
+      .busbar::after, .timeline::after { transform: none; }
+      .busbar::before { display: none; }
+      .preloader-mark::before { display: none; }
+      .service-card::after, .gallery-item::after { opacity: 0; }
+      .breaker::before {
+        transform: translateX(-50%) translateY(-.12rem);
+        background: linear-gradient(180deg, #f4d98a, #c9a333);
+      }
+      .wire { opacity: .88; transform: scaleY(1); }
+      .particle, .hero-glow, .risk-glow { display: none !important; }
+      h1[data-glitch]::before, h1[data-glitch]::after { content: none !important; }
+    }
+  </style>
 </head>
 <body>
+  <a href="#main" class="skip-link">Bỏ qua điều hướng</a>
+  <div class="preloader" id="preloader" aria-hidden="true" data-od-id="preloader"><div class="preloader-mark"><img src="https://xaynha.udc.vn/wp-content/uploads/2026/04/udc-nen-2.jpg" alt="" loading="eager">UDC POWER</div></div>
 
-<header>
-  <div class="nav">
-    <div class="logo"><span class="bolt">⚡</span> CƠ ĐIỆN MGP</div>
-    <nav class="nav-links">
-      <a href="#dich-vu">Dịch vụ</a>
-      <a href="#quy-trinh">Quy trình</a>
-      <a href="#sai-lam">Rủi ro thường gặp</a>
-      <a href="#faq">Hỏi đáp</a>
-    </nav>
-    <a href="tel:0987285667" class="nav-cta">Gọi 0987 285 667</a>
-  </div>
-</header>
+  <header id="siteHeader" data-od-id="site-header">
+    <div class="wrap nav">
+      <a href="#top" class="logo" aria-label="UDC">
+        <span class="logo-icon"><img src="https://xaynha.udc.vn/wp-content/uploads/2026/04/udc-nen-2.jpg" alt="Logo UDC" loading="eager"></span>
+        <span>Cơ Điện <span>UDC</span></span>
+      </a>
+      <nav aria-label="Điều hướng chính">
+        <a href="#dich-vu">Hạng mục</a>
+        <a href="#quy-trinh">Quy trình</a>
+        <a href="#rui-ro">Rủi ro</a>
+        <a href="#faq">FAQ</a>
+        <a href="#lien-he">Liên hệ</a>
+      </nav>
+      <a class="nav-call" href="tel:0987285667" data-od-id="nav-call">0987 285 667</a>
+      <button class="burger" id="burgerBtn" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mobileDrawer" data-od-id="nav-burger"><i aria-hidden="true"></i></button>
+    </div>
+    <div class="drawer" id="mobileDrawer" data-od-id="mobile-drawer">
+      <a href="#dich-vu">Hạng mục<i>01</i></a>
+      <a href="#quy-trinh">Quy trình<i>02</i></a>
+      <a href="#rui-ro">Rủi ro<i>03</i></a>
+      <a href="#faq">FAQ<i>04</i></a>
+      <a href="#lien-he">Liên hệ<i>05</i></a>
+      <a href="tel:0987285667">0987 285 667<i>call</i></a>
+    </div>
+  </header>
 
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow">Thi công điện nhà phố · TP.HCM &amp; Bình Dương</div>
-      <h1>Hệ thống điện tính đúng tải, <span class="hl">không lo quá tải &amp; chập cháy</span> sau khi hoàn thiện.</h1>
-      <p class="lead">Đội thợ điện MGP thi công phần điện âm tường, tủ điện, chống giật cho nhà phố &amp; nhà trọn gói — có bản vẽ sơ đồ điện bàn giao, đo tải trước khi lắp, bảo hành 5 năm.</p>
-      <div class="hero-actions">
-        <button class="btn-primary" onclick="document.getElementById('lien-he').scrollIntoView({behavior:'smooth'})">Nhận báo giá thi công</button>
-        <a href="#dich-vu" class="btn-ghost">Xem hạng mục thi công</a>
+  <main id="main">
+    <section class="hero" id="top" data-od-id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <svg viewBox="0 0 760 760" fill="none"><path d="M102 590V128h510v462H102Z" stroke="currentColor" stroke-width="3"/><path d="M102 250h510M102 370h510M245 128v462M386 128v462M512 128v462" stroke="currentColor" stroke-width="2"/><path d="M170 192h92M430 310h118M298 470h168M168 530h288" stroke="currentColor" stroke-width="8" stroke-linecap="round"/></svg>
       </div>
-      <div class="hero-meta">
-        <div><b>5 năm</b>Bảo hành hệ thống điện</div>
-        <div><b>100%</b>Có sơ đồ điện bàn giao</div>
-        <div><b>24h</b>Khảo sát báo giá</div>
-      </div>
-    </div>
-    <div class="panel-visual">
-      <div class="bar"><span>TỦ ĐIỆN TỔNG · MAIN DB</span><span class="status">● ĐANG HOẠT ĐỘNG</span></div>
-      <div class="breaker-row">
-        <div class="breaker"></div><div class="breaker"></div><div class="breaker"></div>
-        <div class="breaker"></div><div class="breaker off"></div><div class="breaker"></div>
-      </div>
-      <div class="breaker-row">
-        <div class="breaker"></div><div class="breaker"></div><div class="breaker"></div>
-        <div class="breaker"></div><div class="breaker"></div><div class="breaker"></div>
-      </div>
-      <div class="label-row"><span>Tầng trệt / Lầu 1 / Lầu 2</span><span>Có CB chống giật (ELCB)</span></div>
-    </div>
-  </div>
-</section>
+      <div class="hero-glow" id="heroGlow" aria-hidden="true"></div>
+      <div class="particle-field" id="heroParticles" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="hero-kicker">UDC ecosystem · TP.HCM · Bình Dương · Đồng Nai</div>
+          <h1 id="heroH1" data-glitch data-text="Điện nhà phố, tính tải trước khi âm tường.">Điện nhà phố, tính tải trước khi âm tường.</h1>
+          <p class="hero-lead">UDC thi công tủ điện, dây âm tường, chống giật, tiếp địa và điện nhẹ theo mặt bằng sử dụng thực tế. Mỗi nhánh tải lớn được tách rõ, nghiệm thu trước khi tô tường hoặc đóng trần.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#lien-he" data-od-id="cta-khao-sat">Đặt lịch khảo sát</a>
+            <a class="btn btn-secondary" href="#quy-trinh" data-od-id="cta-quy-trinh">Xem quy trình</a>
+          </div>
+          <div class="hero-cards">
+            <div class="hero-card"><strong>QCVN 12</strong><span>Định hướng an toàn hệ thống điện nhà ở và nhà công cộng.</span></div>
+            <div class="hero-card"><strong>TCVN 7447</strong><span>Căn cứ cho hệ thống đi dây, thiết bị hạ áp và tiếp địa.</span></div>
+            <div class="hero-card"><strong>As-built</strong><span>Sơ đồ hoàn công lưu lại để sửa chữa, khoan tường, nâng cấp.</span></div>
+          </div>
+        </div>
 
-<div class="trustbar">
-  <div class="wrap">
-    <div class="item"><b>120+</b><span>Nhà phố đã thi công điện</span></div>
-    <div class="item"><b>0</b><span>Sự cố quá tải sau bàn giao</span></div>
-    <div class="item"><b>≤48h</b><span>Xử lý bảo hành tại nhà</span></div>
-    <div class="item"><b>3</b><span>Bước kiểm tra trước khi đóng trần</span></div>
-  </div>
-</div>
-
-<section id="dich-vu">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Hạng mục thi công</div>
-      <h2>Từ đi dây âm tường đến tủ điện tổng</h2>
-      <p>Mỗi hạng mục đều được đo tải riêng trước khi chốt phương án, không thi công theo bản vẽ mẫu dựng sẵn.</p>
-    </div>
-    <div class="services">
-      <div class="svc-card"><div class="num">01</div><h3>Đi dây điện âm tường</h3><p>Luồn ống gen chống cháy, đi đường dây theo trục đứng/ngang tách biệt điện nhẹ (mạng, camera) và điện nặng.</p></div>
-      <div class="svc-card"><div class="num">02</div><h3>Tủ điện tổng &amp; tủ điện tầng</h3><p>Tính tải theo công suất thiết bị thực tế, chia nhánh riêng cho bếp, máy lạnh, máy nước nóng.</p></div>
-      <div class="svc-card"><div class="num">03</div><h3>CB chống giật (ELCB/RCBO)</h3><p>Lắp cho khu vực ẩm ướt (nhà tắm, sân thượng, bếp) theo tiêu chuẩn an toàn điện dân dụng.</p></div>
-      <div class="svc-card"><div class="num">04</div><h3>Hệ thống ổ cắm &amp; công tắc</h3><p>Bố trí theo mặt bằng nội thất thực tế, tránh tình trạng thiếu ổ cắm hoặc dây nối lòng thòng.</p></div>
-      <div class="svc-card"><div class="num">05</div><h3>Điện nhẹ: mạng, camera, chuông</h3><p>Đi tuyến cáp mạng, camera an ninh, chuông cửa hình riêng biệt, không đi chung ống với điện động lực.</p></div>
-      <div class="svc-card"><div class="num">06</div><h3>Nghiệm thu &amp; đo tải hoàn công</h3><p>Đo điện trở cách điện, kiểm tra tiếp địa, bàn giao sơ đồ điện thực tế (as-built) trước khi đóng trần thạch cao.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="quy-trinh" style="background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Quy trình thi công</div>
-      <h2>5 bước, đúng thứ tự trước khi đóng trần &amp; tô tường</h2>
-      <p>Thứ tự này quyết định việc có phải đục tường sửa lại sau khi hoàn thiện nội thất hay không.</p>
-    </div>
-    <div class="timeline">
-      <div class="step"><div class="rail"></div><div class="dot">1</div><div><h3>Khảo sát &amp; đo tải thiết bị</h3><p>Liệt kê toàn bộ thiết bị điện dự kiến sử dụng (máy lạnh, bếp từ, máy nước nóng...) để tính công suất tủ điện tổng.</p></div></div>
-      <div class="step"><div class="rail"></div><div class="dot">2</div><div><h3>Lên sơ đồ đi dây</h3><p>Vẽ tuyến dây theo mặt bằng, tách riêng đường điện động lực và điện nhẹ, đánh dấu vị trí ổ cắm/công tắc.</p></div></div>
-      <div class="step"><div class="rail"></div><div class="dot">3</div><div><h3>Thi công phần thô</h3><p>Luồn ống gen, đi dây âm tường/âm sàn trước khi tô trát, đúng lúc với tiến độ phần thô xây dựng.</p></div></div>
-      <div class="step"><div class="rail"></div><div class="dot">4</div><div><h3>Lắp tủ điện &amp; thiết bị</h3><p>Lắp CB tổng, CB nhánh, ổ cắm, công tắc; đấu nối theo sơ đồ đã duyệt ở bước 2.</p></div></div>
-      <div class="step"><div class="dot">5</div><div><h3>Đo kiểm &amp; bàn giao</h3><p>Đo điện trở cách điện, kiểm tra tiếp địa, bàn giao sơ đồ hoàn công và phiếu bảo hành 5 năm.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section id="sai-lam">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Rủi ro thường gặp</div>
-      <h2>Vì sao nhiều nhà phố bị chập, nhảy CB sau 1–2 năm sử dụng?</h2>
-    </div>
-    <div class="compare">
-      <div class="compare-card bad">
-        <h3>⚠ Thi công không đo tải</h3>
-        <ul>
-          <li>Dùng chung 1 CB cho cả bếp từ và máy lạnh → CB nhảy liên tục</li>
-          <li>Không tách điện nhẹ và điện nặng → nhiễu tín hiệu mạng/camera</li>
-          <li>Không có bản vẽ hoàn công → sửa chữa sau này phải dò từng đoạn tường</li>
-        </ul>
+        <div class="panel-stage" aria-label="Mô phỏng tủ điện tổng">
+          <div class="panel">
+            <div class="panel-top"><span>Tủ điện tổng · MAIN DB</span><span class="panel-status">Đạt nguồn</span></div>
+            <div class="breaker-board">
+              <div class="busbar"></div>
+              <div class="breaker-grid">
+                <div class="breaker" style="--i:0" data-label="MAIN"></div><div class="breaker" style="--i:1" data-label="BẾP"></div><div class="breaker" style="--i:2" data-label="ML1"></div><div class="breaker" style="--i:3" data-label="ML2"></div><div class="breaker" style="--i:4" data-label="Ổ CẮM"></div><div class="breaker" style="--i:5" data-label="ĐÈN"></div>
+                <div class="breaker" style="--i:6" data-label="WC"></div><div class="breaker" style="--i:7" data-label="SÂN"></div><div class="breaker" style="--i:8" data-label="CAM"></div><div class="breaker" style="--i:9" data-label="LAN"></div><div class="breaker" style="--i:10" data-label="BƠM"></div><div class="breaker" style="--i:11" data-label="SPD"></div>
+              </div>
+              <div class="wire-lanes" aria-hidden="true"><span class="wire" style="--wire:#c9a333;--d:0"></span><span class="wire" style="--wire:#3a63b0;--d:1"></span><span class="wire" style="--wire:#6f97dd;--d:2"></span><span class="wire" style="--wire:#8a6f22;--d:3"></span></div>
+            </div>
+            <div class="panel-caption"><span><b>Chia tải theo nhánh</b>Bếp từ, máy lạnh, máy nước nóng không dùng chung bảo vệ.</span><span><b>Đo kiểm trước bàn giao</b>Kiểm tra thông mạch, cách điện, tiếp địa và nhãn tủ.</span></div>
+          </div>
+          <div class="floating-note"><b>Load sequence</b>Breaker bật tuần tự như dòng điện được phân phối đúng nhánh.</div>
+        </div>
       </div>
-      <div class="compare-card good">
-        <h3>✓ Thi công đúng kỹ thuật</h3>
-        <ul>
-          <li>Mỗi thiết bị công suất lớn có CB nhánh riêng, đúng tiết diện dây</li>
-          <li>Điện nhẹ/điện nặng đi ống riêng, có ELCB tại khu vực ẩm ướt</li>
-          <li>Bàn giao sơ đồ as-built, tra cứu vị trí dây khi cần khoan/đóng đinh</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="faq" style="background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
-  <div class="wrap" style="max-width:820px;">
-    <div class="sec-head">
-      <div class="eyebrow">Hỏi đáp</div>
-      <h2>Những câu hỏi khách hàng thường hỏi trước khi thi công</h2>
-    </div>
-    <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Chi phí thi công điện nhà phố khoảng bao nhiêu?</span><span class="plus">+</span></div>
-        <div class="faq-a">Chi phí phụ thuộc diện tích, số tầng và số lượng thiết bị công suất lớn (máy lạnh, bếp từ...). MGP khảo sát và báo giá chi tiết theo hạng mục trong vòng 24h, không thu phí khảo sát.</div>
+    <section class="trust" data-od-id="trust-stats">
+      <div class="wrap trust-grid">
+        <div class="trust-item" data-od-id="trust-years"><strong>15+</strong><span>Năm kinh nghiệm trong hệ sinh thái xây dựng UDC.</span></div>
+        <div class="trust-item" data-od-id="trust-projects"><strong>500+</strong><span>Công trình UDC đã công bố trên hệ thống thương hiệu.</span></div>
+        <div class="trust-item" data-od-id="trust-quote"><strong>60 phút</strong><span>Tư vấn và phản hồi báo giá theo nội dung UDC đang truyền thông.</span></div>
+        <div class="trust-item" data-od-id="trust-region"><strong>3 tỉnh</strong><span>Phục vụ TP.HCM, Bình Dương và Đồng Nai.</span></div>
       </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Có cần thi công điện trước khi tô tường không?</span><span class="plus">+</span></div>
-        <div class="faq-a">Có. Phần đi dây âm tường/âm sàn phải hoàn thành trước khi tô trát và đóng trần thạch cao, nếu không sẽ phải đục lại tường đã hoàn thiện.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Bảo hành 5 năm áp dụng cho hạng mục nào?</span><span class="plus">+</span></div>
-        <div class="faq-a">Áp dụng cho toàn bộ hệ thống dây điện âm tường, tủ điện và thiết bị đóng cắt do MGP lắp đặt, với điều kiện không có tác động ngoại lực làm hư hỏng đường dây.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Có cung cấp bản vẽ sơ đồ điện sau khi hoàn thành không?</span><span class="plus">+</span></div>
-        <div class="faq-a">Có. Sau khi nghiệm thu, MGP bàn giao sơ đồ điện thực tế (as-built) để chủ nhà lưu lại, thuận tiện khi cần sửa chữa hoặc cải tạo sau này.</div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="lien-he">
-  <div class="wrap">
-    <div class="cta-block">
-      <div>
-        <div class="eyebrow">Nhận báo giá</div>
-        <h2>Khảo sát &amp; báo giá thi công điện trong 24h</h2>
-        <p>Để lại thông tin, đội kỹ thuật MGP sẽ liên hệ khảo sát công trình và tư vấn phương án đi điện phù hợp với thiết kế nội thất của bạn.</p>
+    <section class="section-forest" id="dich-vu" data-od-id="services">
+      <div class="wrap">
+        <div class="section-head reveal" data-od-id="services-head">
+          <span class="section-tag">Hạng mục kỹ thuật</span>
+          <h2>6 phần điện phải rõ trước khi đóng trần.</h2>
+          <p>Không gọi chung là “dịch vụ điện nước”. Mỗi hạng mục dưới đây ảnh hưởng trực tiếp tới tải, tuyến dây, an toàn và khả năng sửa chữa sau này. Với công trình mới, phần điện luôn được UDC lên tiến độ đồng bộ trong gói <a href="https://udc.vn/xay-nha-tron-goi/" target="_blank" rel="noopener">thi công trọn gói</a>.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal reveal-delay-1" data-od-id="service-card-tu-dien"><svg viewBox="0 0 64 64" fill="none"><path d="M10 44h44M16 44V17h32v27M24 44V28h16v16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 17V9h20v8" stroke="currentColor" stroke-width="3"/></svg><h3>Tủ điện tổng và tủ tầng</h3><p>Chọn MCCB/MCB, RCCB/RCBO theo công suất sử dụng, chia riêng bếp, máy lạnh, máy nước nóng, bơm và ngoài trời.</p><small>Không gộp tải lớn chung một CB</small></article>
+          <article class="service-card reveal reveal-delay-2" data-od-id="service-card-day"><svg viewBox="0 0 64 64" fill="none"><path d="M12 18h40M12 32h40M12 46h40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M18 18c4 8 4 20 0 28M32 18c4 8 4 20 0 28M46 18c4 8 4 20 0 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><h3>Dây âm tường, âm sàn</h3><p>Đi ống theo tuyến ngang dọc rõ, hạn chế giao cắt, giữ khoảng cách với ống nước nóng/lạnh và chụp ảnh trước khi tô.</p><small>Có nghiệm thu tuyến dây</small></article>
+          <article class="service-card reveal reveal-delay-3" data-od-id="service-card-o-cam"><svg viewBox="0 0 64 64" fill="none"><path d="M20 10h24v44H20z" stroke="currentColor" stroke-width="3"/><path d="M29 20h6M29 32h6M29 44h6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M14 20h6M44 20h6M14 44h6M44 44h6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><h3>Ổ cắm, công tắc, đèn</h3><p>Bố trí theo mặt bằng nội thất, chiều cao sử dụng và thói quen sinh hoạt; tách mạch đèn, ổ cắm và thiết bị tải lớn.</p><small>Tránh thiếu ổ sau hoàn thiện</small></article>
+          <article class="service-card reveal reveal-delay-4" data-od-id="service-card-chong-giat"><svg viewBox="0 0 64 64" fill="none"><path d="M32 8 16 15v14c0 12 7 21 16 27 9-6 16-15 16-27V15L32 8Z" stroke="currentColor" stroke-width="3"/><path d="M24 32h16M32 24v16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><h3>Chống giật khu vực ẩm</h3><p>Lắp bảo vệ dòng rò cho nhà vệ sinh, sân thượng, bếp, máy nước nóng và khu vực ngoài trời theo môi trường lắp đặt. Các khu vực này nên được kiểm tra <a href="https://udc.vn/bao-gia-thi-cong-chong-tham-tron-goi/" target="_blank" rel="noopener">chống thấm trọn gói</a> đồng thời để tránh ẩm ảnh hưởng ngược lại hệ thống điện.</p><small>Ưu tiên an toàn người sử dụng</small></article>
+          <article class="service-card reveal reveal-delay-5" data-od-id="service-card-tiep-dia"><svg viewBox="0 0 64 64" fill="none"><path d="M32 12v29M18 41h28M24 50h16M29 58h6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M18 21c8 5 20 5 28 0" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><h3>Tiếp địa và dây PE</h3><p>Thi công dây bảo vệ về tủ điện, kiểm tra điểm nối đất cho thiết bị vỏ kim loại và khu vực có nguy cơ rò điện.</p><small>Theo nhóm tiêu chuẩn TCVN 7447-5-54</small></article>
+          <article class="service-card reveal reveal-delay-6" data-od-id="service-card-lan-camera"><svg viewBox="0 0 64 64" fill="none"><path d="M12 18h14v14H12zM38 18h14v14H38zM25 43h14v14H25z" stroke="currentColor" stroke-width="3"/><path d="M26 25h12M19 32v7c0 3 2 4 5 4h1M45 32v7c0 3-2 4-5 4h-1" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><h3>LAN, camera, chuông hình</h3><p>Đi cáp mạng, camera, chuông cửa hình, wifi mesh riêng tuyến với điện động lực để giảm nhiễu và dễ nâng cấp.</p><small>Không đi chung ống với dây nguồn</small></article>
+        </div>
       </div>
-      <form onsubmit="event.preventDefault(); alert('Cảm ơn bạn! MGP sẽ liên hệ lại trong 24h.');">
-        <input type="text" placeholder="Họ và tên" required>
-        <input type="tel" placeholder="Số điện thoại" required>
-        <input type="text" placeholder="Địa chỉ công trình (Quận/Huyện)">
-        <textarea rows="3" placeholder="Diện tích, số tầng, ghi chú thêm..."></textarea>
-        <button type="submit" class="btn-primary">Gửi yêu cầu báo giá</button>
-      </form>
+    </section>
+
+    <section class="section-dark" id="cong-trinh" data-od-id="gallery">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="section-tag">Công trình thực tế</span>
+          <h2>Hình ảnh thi công tại các công trình UDC.</h2>
+          <p>Một số công trình phần điện – phần thô đã và đang triển khai tại TP.HCM, Bình Dương, Đồng Nai.</p>
+        </div>
+        <div class="gallery-head reveal">
+          <div class="gallery-count" data-od-id="gallery-count"><b id="galleryCount">94</b><span>hình ảnh thi công thực tế</span></div>
+          <div class="gallery-filters" id="galleryFilters" role="group" aria-label="Lọc ảnh" data-od-id="gallery-filters">
+            <button type="button" class="chip is-active" data-gf="all">Tất cả</button>
+            <button type="button" class="chip" data-gf="biet-thu">Biệt thự</button>
+            <button type="button" class="chip" data-gf="nha-pho">Nhà phố</button>
+            <button type="button" class="chip" data-gf="nha-xuong">Nhà xưởng</button>
+            <button type="button" class="chip" data-gf="van-phong">Văn phòng</button>
+            <button type="button" class="chip" data-gf="ban-giao">Bàn giao</button>
+            <button type="button" class="chip" data-gf="sua-chua">Sửa chữa</button>
+            <button type="button" class="chip" data-gf="ong-am">Ống âm</button>
+            <button type="button" class="chip" data-gf="bom">Cụm bơm</button>
+            <button type="button" class="chip" data-gf="khac">Khác</button>
+          </div>
+        </div>
+        <div class="gallery-grid" id="galleryGrid" data-od-id="gallery-grid"></div>
+      </div>
+      <div class="lightbox hidden" id="galleryLightbox" data-od-id="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh phóng to">
+        <button class="lb-close" type="button" aria-label="Đóng ảnh" data-od-id="lightbox-close">✕</button>
+        <button class="lb-prev" type="button" aria-label="Ảnh trước" data-od-id="lightbox-prev">‹</button>
+        <div class="lb-stage">
+          <img id="lbImg" src="" alt="">
+          <div class="lb-caption" id="lbCaption"></div>
+          <div class="lb-counter" id="lbCounter"></div>
+        </div>
+        <button class="lb-next" type="button" aria-label="Ảnh sau" data-od-id="lightbox-next">›</button>
+      </div>
+    </section>
+
+    <section class="section-linen" id="quy-trinh" data-od-id="process">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="section-tag">Quy trình thi công</span>
+          <h2>Sai thứ tự là phải đục lại.</h2>
+          <p>UDC nhấn mạnh nghiệm thu từng giai đoạn trong thi công. Với phần điện, thứ tự càng quan trọng vì dây âm tường sẽ bị che sau tô trát, trần và nội thất.</p>
+        </div>
+        <div class="timeline reveal" id="timeline">
+          <article class="step reveal reveal-delay-1" data-od-id="step-1"><div class="step-num">1</div><div><h3>Khảo sát mặt bằng và công suất</h3><p>Ghi vị trí thiết bị, số máy lạnh, bếp từ, máy nước nóng, máy bơm, camera, wifi để lập bảng tải sơ bộ.</p></div></article>
+          <article class="step reveal reveal-delay-2" data-od-id="step-2"><div class="step-num">2</div><div><h3>Chốt sơ đồ tủ và tuyến dây</h3><p>Chia mạch theo tầng, khu vực ẩm và thiết bị công suất lớn; xác định tuyến ống trước khi đục rãnh hoặc đặt trong sàn.</p></div></article>
+          <article class="step reveal reveal-delay-3" data-od-id="step-3"><div class="step-num">3</div><div><h3>Đi ống, kéo dây trước tô</h3><p>Thi công phần âm tường đồng bộ với <a href="https://udc.vn/xay-nha-phan-tho/" target="_blank" rel="noopener">thi công phần thô</a>, chụp ảnh nghiệm thu tuyến ống và hộp âm trước khi che phủ.</p></div></article>
+          <article class="step reveal reveal-delay-4" data-od-id="step-4"><div class="step-num">4</div><div><h3>Lắp tủ điện và thiết bị mặt</h3><p>Đấu nối CB, RCBO/RCCB, ổ cắm, công tắc, đèn, thiết bị điện nhẹ theo mã tuyến đã ghi trên sơ đồ.</p></div></article>
+          <article class="step reveal reveal-delay-5" data-od-id="step-5"><div class="step-num">5</div><div><h3>Đo kiểm và bàn giao</h3><p>Kiểm tra thông mạch, cách điện, tiếp địa, nhãn tủ điện và bàn giao sơ đồ hoàn công để chủ nhà lưu.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="risk" id="rui-ro" data-od-id="risks">
+      <div class="risk-glow" id="riskGlow" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="section-tag">So sánh rủi ro</span>
+          <h2>Lỗi điện thường nằm sẵn trong tường.</h2>
+          <p>Không dọa suông: quá tải sinh nhiệt, đấu nối lỏng tạo hồ quang, thiếu sơ đồ khiến sửa chữa phải dò phá.</p>
+        </div>
+        <div class="compare">
+          <article class="compare-card bad reveal"><h3>Thi công ẩu</h3><ul><li><span class="symbol">!</span><span><b>Dây không đúng tải.</b>Thiết bị công suất lớn dùng chung nhánh khiến dây nóng, CB nhảy hoặc đầu nối lão hóa nhanh.</span></li><li><span class="symbol">!</span><span><b>Không tách điện nhẹ.</b>Cáp mạng/camera đi chung ống nguồn dễ nhiễu, khó thay dây khi nâng cấp.</span></li><li><span class="symbol">!</span><span><b>Thiếu chống giật.</b>Khu vực ẩm như nhà vệ sinh, sân thượng, bếp thiếu thiết bị ngắt khi rò điện.</span></li><li><span class="symbol">!</span><span><b>Không có sơ đồ.</b>Khi khoan tường, sửa đèn hoặc nâng tầng phải dò dây và đục thử.</span></li></ul></article>
+          <article class="compare-card good reveal"><h3>Đúng kỹ thuật</h3><ul><li><span class="symbol">✓</span><span><b>Tính tải trước khi kéo dây.</b>Tiết diện dây và CB được chọn theo dòng tải, phương pháp lắp đặt và nhóm thiết bị.</span></li><li><span class="symbol">✓</span><span><b>Tách nhánh rõ.</b>Bếp, máy lạnh, máy nước nóng, ổ cắm, chiếu sáng và điện nhẹ có mã tuyến riêng.</span></li><li><span class="symbol">✓</span><span><b>Nghiệm thu trước che phủ.</b>Chụp ảnh tuyến ống, đo kiểm cơ bản trước tô tường và đóng trần.</span></li><li><span class="symbol">✓</span><span><b>Bàn giao hồ sơ.</b>Sơ đồ as-built giúp sửa chữa, khoan bắt thiết bị và cải tạo sau này ít rủi ro hơn.</span></li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-light" id="faq" data-od-id="faq">
+      <div class="wrap faq-layout">
+        <div class="faq-intro reveal">
+          <span class="section-tag">FAQ</span>
+          <h2>Trước khi ký, khách thường hỏi gì?</h2>
+          <p>Câu trả lời theo tinh thần UDC: rõ phạm vi, rõ điều kiện kỹ thuật, không hứa chung chung.</p>
+        </div>
+        <div class="faq-list reveal">
+          <article class="faq-item open" data-od-id="faq-item-1"><button class="faq-toggle" type="button" aria-expanded="true" data-od-id="faq-toggle-1"><span>Khi nào nên gọi đội điện vào công trình?</span><span>+</span></button><div class="faq-answer"><p>Nên khảo sát ngay sau khi có mặt bằng công năng và trước giai đoạn tô trát. Nếu chờ tới lúc đóng trần hoặc lắp nội thất, nhiều tuyến dây âm tường phải đổi bằng giải pháp nổi hoặc phải đục sửa.</p></div></article>
+          <article class="faq-item"><button class="faq-toggle" type="button" aria-expanded="false"><span>Chi phí thi công điện được tính như thế nào?</span><span>+</span></button><div class="faq-answer"><p>UDC cần diện tích, số tầng, số thiết bị công suất lớn, loại vật tư và yêu cầu điện nhẹ để lập báo giá. Báo giá nên tách vật tư, nhân công, tủ điện, thiết bị đóng cắt và nghiệm thu.</p></div></article>
+          <article class="faq-item"><button class="faq-toggle" type="button" aria-expanded="false"><span>Có cần bản vẽ điện nếu nhà phố nhỏ?</span><span>+</span></button><div class="faq-answer"><p>Cần. Nhà nhỏ vẫn có bếp, máy lạnh, máy nước nóng, ổ cắm và điện nhẹ. Sơ đồ giúp chia tải, xác định vị trí dây âm tường và là tài liệu quan trọng khi khoan tường hoặc sửa chữa.</p></div></article>
+          <article class="faq-item"><button class="faq-toggle" type="button" aria-expanded="false"><span>UDC có nhận sửa điện nhà đang ở không?</span><span>+</span></button><div class="faq-answer"><p>Có thể khảo sát để đánh giá. Với nhà đang ở, phương án ưu tiên khoanh vùng sự cố, đo tải, thay tủ điện hoặc bổ sung nhánh nổi/âm cục bộ, hạn chế đục phá khi chưa có căn cứ. Nếu cần cải tạo đồng thời phần xây, có thể tham khảo thêm dịch vụ <a href="https://udc.vn/sua-chua-nha-tron-goi/" target="_blank" rel="noopener">sửa chữa nhà trọn gói</a> của UDC.</p></div></article>
+          <article class="faq-item"><button class="faq-toggle" type="button" aria-expanded="false"><span>Bảo hành phần điện ghi như thế nào?</span><span>+</span></button><div class="faq-answer"><p>Thời hạn và phạm vi bảo hành cần ghi rõ trong hợp đồng: đường dây, tủ điện, thiết bị đóng cắt, điều kiện loại trừ và thời gian phản hồi. Trang này không tự đặt số năm nếu chưa có hợp đồng/vật tư cụ thể.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+<section class="section-dark" id="lien-he" data-od-id="contact">
+      <div class="wrap contact-panel reveal">
+        <div class="contact-copy">
+          <span class="section-tag">Liên hệ khảo sát</span>
+          <h2>Bắt đầu bằng một buổi khảo sát tải.</h2>
+          <p>Gửi thông tin công trình, UDC sẽ liên hệ để kiểm tra mặt bằng, số tầng, thiết bị dự kiến và giai đoạn hiện tại của phần thô. Nếu đã có bản vẽ, hãy chuẩn bị mặt bằng điện hoặc mặt bằng nội thất để báo giá sát hơn.</p>
+          <div class="contact-facts">
+            <span><b>Hotline:</b> 0987 285 667 · Hotline hỗ trợ: 0917 18 07 84</span>
+            <span><b>Khu vực:</b> TP.HCM · Bình Dương · Đồng Nai · Thủ Đức · Dĩ An · Thuận An · Biên Hòa</span>
+          </div>
+        </div>
+        <form id="contactForm" data-od-id="contact-form">
+          <label>Họ và tên<input name="name" autocomplete="name" required placeholder="Ví dụ: Anh Minh"></label>
+          <label>Số điện thoại<input name="phone" type="tel" autocomplete="tel" required placeholder="Ví dụ: 09xx xxx xxx"></label>
+          <label>Khu vực công trình<input name="area" placeholder="Quận / thành phố / tỉnh"></label>
+          <label>Giai đoạn hiện tại<select name="stage"><option>Chuẩn bị thi công phần thô</option><option>Đang xây, chưa tô tường</option><option>Đã hoàn thiện, cần sửa/nâng cấp</option><option>Cần kiểm tra tủ điện hoặc chống giật</option></select></label>
+          <label>Mô tả nhanh<textarea name="message" placeholder="Số tầng, diện tích, thiết bị chính, yêu cầu camera/mạng nếu có..."></textarea></label>
+          <p class="form-note">Gửi yêu cầu sẽ mở sẵn email tới UDC. Để nhận lead tự động và lưu lại lịch sử, nên nối thêm Formspree, Google Form hoặc API nhận lead riêng.</p>
+          <button class="btn btn-primary" type="submit">Gửi yêu cầu tư vấn</button>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer data-od-id="site-footer">
+    <div class="wrap footer-grid">
+      <div><b><a href="https://udc.vn/" target="_blank" rel="noopener">UDC</a></b><span>Thi công điện nhà phố thuộc hệ sinh thái UDC.</span><br><span>© <span id="year">2026</span> UDC.</span><br><span><a href="https://udc.vn/lien-he/" target="_blank" rel="noopener">Liên hệ UDC</a></span></div>
+      <div><b>Hotline</b><a href="tel:0987285667">0987 285 667</a><br><span>Hotline hỗ trợ: 0917 18 07 84</span></div>
+      <div><b>Khu vực phục vụ</b><span>TP.HCM · Bình Dương · Đồng Nai</span><br><span>Thủ Đức · Dĩ An · Thuận An · Biên Hòa</span></div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<footer>
-  <div class="wrap">
-    <span>© <span id="year"></span> Cơ Điện MGP · Thi công điện nhà phố TP.HCM &amp; Bình Dương</span>
-    <span>Hotline: <a href="tel:0987285667">0987 285 667</a></span>
-  </div>
-</footer>
+  <nav class="mobile-cta-bar" aria-label="Liên hệ nhanh" data-od-id="mobile-cta-bar">
+    <a class="call" href="tel:0987285667">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>
+      Gọi hotline
+    </a>
+    <a class="contact" href="#lien-he">Nhận tư vấn</a>
+  </nav>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+  <script>
+    (function () {
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      var preloader = document.getElementById('preloader');
+      var MIN_PRELOADER_MS = 1600;
+      var preloaderStart = Date.now();
+      function hidePreloader() {
+        var elapsed = Date.now() - preloaderStart;
+        var wait = Math.max(0, MIN_PRELOADER_MS - elapsed);
+        setTimeout(function () { preloader.classList.add('hidden'); }, reduceMotion ? 0 : wait);
+      }
+      if (document.readyState === 'complete') hidePreloader();
+      else window.addEventListener('load', hidePreloader);
+
+      var header = document.getElementById('siteHeader');
+      var lastY = window.scrollY;
+      function syncHeader() {
+        var y = window.scrollY;
+        header.classList.toggle('scrolled', y > 12);
+        var isBottom = y + window.innerHeight > document.documentElement.scrollHeight - 140;
+        if (reduceMotion || window.innerWidth > 820) {
+          header.classList.remove('hidden-up');
+        } else {
+          header.classList.toggle('hidden-up', y > 240 && y > lastY && !isBottom);
+        }
+        lastY = y;
+      }
+      syncHeader();
+      window.addEventListener('scroll', syncHeader, { passive: true });
+
+      var burgerBtn = document.getElementById('burgerBtn');
+      var mobileDrawer = document.getElementById('mobileDrawer');
+      var ctaBar = document.querySelector('.mobile-cta-bar');
+      function toggleDrawer(open) {
+        var willOpen = open !== undefined ? open : !mobileDrawer.classList.contains('open');
+        mobileDrawer.classList.toggle('open', willOpen);
+        burgerBtn.classList.toggle('active', willOpen);
+        burgerBtn.setAttribute('aria-expanded', String(willOpen));
+        if (ctaBar) ctaBar.classList.toggle('hid', willOpen);
+        document.body.style.overflow = willOpen ? 'hidden' : '';
+      }
+      if (burgerBtn && mobileDrawer) {
+        burgerBtn.addEventListener('click', function () { toggleDrawer(); });
+        mobileDrawer.addEventListener('click', function (e) {
+          if (e.target.closest('a')) toggleDrawer(false);
+        });
+        window.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && mobileDrawer.classList.contains('open')) toggleDrawer(false);
+        });
+      }
+
+      var revealEls = document.querySelectorAll('.reveal');
+      if (reduceMotion || !('IntersectionObserver' in window)) {
+        revealEls.forEach(function (el) { el.classList.add('visible'); });
+      } else {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: .1, rootMargin: '0px 0px -40px 0px' }),
+        observerStagger = function (el) {
+          var parent = el.parentElement;
+          var kids = Array.prototype.filter.call(parent.children, function (c) {
+            return c.classList && c.classList.contains('reveal');
+          });
+          el.style.setProperty('--ds', Math.min(kids.indexOf(el) * 0.07, 0.45) + 's');
+        };
+        revealEls.forEach(function (el) { observerStagger(el); observer.observe(el); });
+      }
+      var timeline = document.getElementById('timeline');
+      if (timeline) {
+        if (reduceMotion || !('IntersectionObserver' in window)) {
+          timeline.classList.add('visible');
+        } else {
+          var timelineObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                timelineObserver.unobserve(entry.target);
+              }
+            });
+          }, { threshold: .1, rootMargin: '0px 0px -40px 0px' });
+          timelineObserver.observe(timeline);
+        }
+      }
+
+      var heroH1 = document.getElementById('heroH1');
+      if (heroH1) {
+        if (reduceMotion) {
+          heroH1.dataset.glitched = 'true';
+        } else if ('IntersectionObserver' in window) {
+          var glitchObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting && heroH1.dataset.glitched !== 'true') {
+                heroH1.dataset.glitched = 'true';
+                heroH1.classList.add('glitch-play');
+                glitchObserver.unobserve(heroH1);
+              }
+            });
+          }, { threshold: .4 });
+          glitchObserver.observe(heroH1);
+        }
+      }
+
+      var particleField = document.getElementById('heroParticles');
+      if (particleField && !reduceMotion) {
+        var particleCount = window.innerWidth < 640 ? 14 : (window.innerWidth < 1024 ? 22 : 34);
+        var particleScale = window.innerWidth < 640 ? 2 : (window.innerWidth < 1024 ? 2.6 : 3);
+        var frag = document.createDocumentFragment();
+        for (var i = 0; i < particleCount; i++) {
+          var p = document.createElement('span');
+          p.className = 'particle' + (Math.random() > .55 ? ' is-blue' : '');
+          var x = 42 + Math.random() * 54;
+          var y = 6 + Math.random() * 88;
+          var size = ((1.6 + Math.random() * 1.8) * (particleScale / 3)).toFixed(1);
+          var dur = (5 + Math.random() * 5).toFixed(2);
+          var delay = (Math.random() * 6).toFixed(2);
+          var dx = (Math.random() * 26 - 13).toFixed(1);
+          var dy = -(10 + Math.random() * 22).toFixed(1);
+          var op = (.3 + Math.random() * .4).toFixed(2);
+          p.style.setProperty('--x', x + '%');
+          p.style.setProperty('--y', y + '%');
+          p.style.setProperty('--size', size + 'px');
+          p.style.setProperty('--dur', dur + 's');
+          p.style.setProperty('--delay', delay + 's');
+          p.style.setProperty('--dx', dx + 'px');
+          p.style.setProperty('--dy', dy + 'px');
+          p.style.setProperty('--op', op);
+          frag.appendChild(p);
+        }
+        particleField.appendChild(frag);
+      }
+
+      var tiltEls = document.querySelectorAll('.service-card, .gallery-item');
+      var canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+      if (canHover && !reduceMotion && 'PointerEvent' in window) {
+        tiltEls.forEach(function (el) {
+          var isGlow = el.classList.contains('service-card');
+          el.addEventListener('pointerenter', function () { el.classList.add('is-glowing'); });
+          el.addEventListener('pointerleave', function () {
+            el.classList.remove('is-glowing');
+            el.style.transform = '';
+          });
+          el.addEventListener('pointermove', function (e) {
+            var r = el.getBoundingClientRect();
+            var px = (e.clientX - r.left) / r.width;
+            var py = (e.clientY - r.top) / r.height;
+            if (isGlow) {
+              el.style.setProperty('--gx', (px * 100).toFixed(1) + '%');
+              el.style.setProperty('--gy', (py * 100).toFixed(1) + '%');
+            }
+            var rx = (0.5 - py) * 7;
+            var ry = (px - 0.5) * 7;
+            el.style.transform = 'perspective(900px) rotateX(' + rx.toFixed(1) + 'deg) rotateY(' + ry.toFixed(1) + 'deg) translateY(-4px)';
+          });
+        });
+      }
+
+      var glowLayers = [];
+      var heroGlowEl = document.getElementById('heroGlow');
+      var riskGlowEl = document.getElementById('riskGlow');
+      if (heroGlowEl) glowLayers.push({ el: heroGlowEl, section: heroGlowEl.closest('section'), rate: .05 });
+      if (riskGlowEl) glowLayers.push({ el: riskGlowEl, section: riskGlowEl.closest('section'), rate: .07 });
+      function updateParallax() {
+        if (!glowLayers.length) return;
+        var viewportCenter = window.innerHeight / 2;
+        glowLayers.forEach(function (layer) {
+          var rect = layer.section.getBoundingClientRect();
+          var sectionCenter = rect.top + rect.height / 2;
+          var offset = (viewportCenter - sectionCenter) * layer.rate;
+          layer.el.style.transform = 'translate3d(0,' + offset.toFixed(1) + 'px,0)';
+        });
+      }
+      if (reduceMotion) {
+        glowLayers.forEach(function (layer) { layer.el.style.display = 'none'; });
+        glowLayers = [];
+      }
+
+      var lenis = null;
+      if (!reduceMotion && window.Lenis) {
+        lenis = new Lenis({
+          duration: 1.2,
+          easing: function (t) { return 1 - Math.pow(2, -10 * t); }
+        });
+      }
+      function raf(time) {
+        if (lenis) lenis.raf(time);
+        updateParallax();
+        requestAnimationFrame(raf);
+      }
+      if (lenis) requestAnimationFrame(raf);
+      if (!lenis) {
+        window.addEventListener('scroll', updateParallax, { passive: true });
+        updateParallax();
+      }
+
+      var navTargets = ['#dich-vu', '#quy-trinh', '#rui-ro', '#faq', '#lien-he'];
+      navTargets.forEach(function (sel) {
+        document.querySelectorAll('a[href="' + sel + '"]').forEach(function (link) {
+          link.addEventListener('click', function (event) {
+            var target = document.querySelector(sel);
+            if (!target) return;
+            event.preventDefault();
+            if (lenis) {
+              lenis.scrollTo(target);
+            } else {
+              target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
+            }
+          });
+        });
+      });
+
+      document.querySelectorAll('.faq-toggle').forEach(function (button) {
+        button.addEventListener('click', function () {
+          var item = button.closest('.faq-item');
+          var open = !item.classList.contains('open');
+          item.classList.toggle('open', open);
+          button.setAttribute('aria-expanded', String(open));
+        });
+      });
+
+      var form = document.getElementById('contactForm');
+      var status = document.getElementById('formStatus');
+      // TODO: đây là giải pháp tạm (mở email nháp) để lead không bị mất.
+      // Khi có endpoint thật (Formspree / Google Form / API riêng), thay khối này
+      // bằng fetch(ENDPOINT, { method: 'POST', body: new FormData(form) }) rồi mới báo thành công.
+      var LEAD_EMAIL = 'info@udc.vn'; // TODO: thay bằng email nhận lead thật của UDC
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        var data = new FormData(form);
+        var name = (data.get('name') || '').toString().trim();
+        var phone = (data.get('phone') || '').toString().trim();
+        var area = (data.get('area') || '').toString().trim();
+        var stage = (data.get('stage') || '').toString().trim();
+        var message = (data.get('message') || '').toString().trim();
+
+        if (!name || !phone) {
+          status.textContent = 'Vui lòng nhập họ tên và số điện thoại.';
+          return;
+        }
+
+        var subject = 'Yêu cầu tư vấn điện nhà phố - ' + name;
+        var bodyLines = [
+          'Họ và tên: ' + name,
+          'Số điện thoại: ' + phone,
+          'Khu vực công trình: ' + (area || '(chưa nhập)'),
+          'Giai đoạn hiện tại: ' + (stage || '(chưa chọn)'),
+          'Mô tả nhanh: ' + (message || '(không có)')
+        ];
+        var mailtoUrl = 'mailto:' + LEAD_EMAIL
+          + '?subject=' + encodeURIComponent(subject)
+          + '&body=' + encodeURIComponent(bodyLines.join('\n'));
+
+        window.location.href = mailtoUrl;
+        status.textContent = 'Đã mở email để gửi yêu cầu. Nếu email không tự mở, vui lòng gọi hotline 0987 285 667.';
+        form.reset();
+      });
+
+      if (ctaBar && form) {
+        form.addEventListener('focusin', function () { ctaBar.classList.add('hid'); });
+        form.addEventListener('focusout', function () {
+          if (!mobileDrawer.classList.contains('open')) ctaBar.classList.remove('hid');
+        });
+      }
+
+      /* ===== THƯ MỤC ẢNH: render toàn bộ ảnh + lọc (KHÔNG để trống ô lưới) + lightbox ===== */
+      var galleryGrid = document.getElementById('galleryGrid');
+      var galleryCount = document.getElementById('galleryCount');
+      var galleryData = [];
+      var capNames = { 'biet-thu': 'Biệt thự Quận 1', 'nha-pho': 'Nhà phố', 'nha-xuong': 'Nhà xưởng', 'van-phong': 'Văn phòng', 'ban-giao': 'Bàn giao công trình', 'sua-chua': 'Sửa chữa nhà cũ', 'ong-am': 'Ống âm sân mái', 'dien-nuoc': 'Điện nước phần thô', 'bom': 'Cụm bơm áp', 'khac': 'Thi công thực tế' };
+
+      if (galleryGrid) {
+        var U = 'https://xaynha.udc.vn/wp-content/uploads/';
+        galleryData = [
+          { s: U + '2022/12/Thi-cong-ME-cho-van-phong-sua-chua.png', c: 'van-phong' },
+          { s: U + '2026/05/thi-cong-cong-trinh-nha-xuong-thu-duc-1.webp', c: 'nha-xuong' },
+          { s: U + '2026/05/thi-cong-cong-trinh-nha-xuong-thu-duc.webp', c: 'nha-xuong' },
+          { s: U + '2026/05/thi-cong-cong-trinh-nha-xuong-thu-duc-5.webp', c: 'nha-xuong' },
+          { s: U + '2026/05/trien-khai.webp', c: 'khac' },
+          { s: U + '2026/05/sua-chua-1.webp', c: 'sua-chua' },
+          { s: U + '2026/05/cong-trinh-phu-nhuan-6.webp', c: 'nha-pho' },
+          { s: U + '2026/05/thi-cong-cong-trinh-nha-xuong-thu-duc-2.webp', c: 'nha-xuong' },
+          { s: U + '2026/05/di-lai-he-thong-den-dien.webp', c: 'khac' },
+          { s: U + '2026/05/thi-cong-cong-trinh-nha-xuong-thu-duc-4.webp', c: 'nha-xuong' },
+          { s: U + '2026/05/thi-cong-cong-trinh-nha-xuong-thu-duc-7.webp', c: 'nha-xuong' },
+          { s: U + '2026/04/cong-tac-lam-viec.webp', c: 'khac' },
+          { s: U + '2026/08/thi-cong-me-biet-thu-quan-1.5.webp', c: 'biet-thu' },
+          { s: U + '2026/08/thi-cong-me-biet-thu-quan-1.6.webp', c: 'biet-thu' },
+          { s: U + '2026/08/thi-cong-me-biet-thu-quan-1.10.webp', c: 'biet-thu' },
+          { s: U + '2026/08/thi-cong-me-tai-quan-7.1.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-me-biet-thu-quan-1.webp', c: 'biet-thu' },
+          { s: U + '2026/08/thi-cong-me-biet-thu-quan-1.7.webp', c: 'biet-thu' },
+          { s: U + '2026/08/thi-cong-me-tai-quan-7.2.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-me-biet-thu-quan-1.9.webp', c: 'biet-thu' },
+          { s: U + '2026/08/thi-cong-me-biet-thu-quan-1.8.webp', c: 'biet-thu' },
+          { s: U + '2026/08/thi-cong-me-tai-quan-7.4.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-me-tai-quan-7.3.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-me-tai-quan-7.5.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-me-tai-quan-7.6.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-me-tai-quan-7.7.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-me-tai-quan-7.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-nha-di-an.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-nha-di-an-2.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-nha-quan-.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-nha-quan-1.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-nha-quan-7.2.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-nha-quan-7.4.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-nha-quan-7.3.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-nha-quan-7.5.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-ong-am-san-mai-long-hung-dong-nai.3.webp', c: 'ong-am' },
+          { s: U + '2026/08/thi-cong-ong-am-san-mai-long-hung-dong-nai.2.webp', c: 'ong-am' },
+          { s: U + '2026/08/ben-cat-binh-duong.webp', c: 'nha-pho' },
+          { s: U + '2026/08/cong-trinh-nha-quan-2-ban-giao.1.webp', c: 'ban-giao' },
+          { s: U + '2026/08/ben-cat-binh-duong-2.webp', c: 'nha-pho' },
+          { s: U + '2026/08/cong-trinh-nha-quan-2-ban-giao.2.webp', c: 'ban-giao' },
+          { s: U + '2026/08/cong-trinh-nha-quan-2-ban-giao.4.webp', c: 'ban-giao' },
+          { s: U + '2026/08/cong-trinh-nha-quan-2-ban-giao.3.webp', c: 'ban-giao' },
+          { s: U + '2026/08/cong-trinh-nha-quan-2-ban-giao.5.webp', c: 'ban-giao' },
+          { s: U + '2026/08/cong-trinh-nha-quan-2-ban-giao.6.webp', c: 'ban-giao' },
+          { s: U + '2026/08/cong-trinh-nha-quan-2-ban-giao.8.webp', c: 'ban-giao' },
+          { s: U + '2026/08/cong-trinh-nha-quan-2-ban-giao.7.webp', c: 'ban-giao' },
+          { s: U + '2026/08/cong-trinh-nha-quan-2-ban-giao.9.webp', c: 'ban-giao' },
+          { s: U + '2026/08/cong-trinh-nha-quan-2-ban-giao.10.webp', c: 'ban-giao' },
+          { s: U + '2026/08/cong-trinh-nha-quan-2-ban-giao.11.webp', c: 'ban-giao' },
+          { s: U + '2026/08/cong-trinh-nha-quan-2-ban-giao.13.webp', c: 'ban-giao' },
+          { s: U + '2026/08/cong-trinh-nha-quan-2-ban-giao.12.webp', c: 'ban-giao' },
+          { s: U + '2026/08/cong-trinh-nha-quan-2-ban-giao.webp', c: 'ban-giao' },
+          { s: U + '2026/08/cong-trinh-nha-quan-2-ban-giao.14.webp', c: 'ban-giao' },
+          { s: U + '2026/08/sua-chua-nha-cu.1.webp', c: 'sua-chua' },
+          { s: U + '2026/08/sua-chua-nha-cu.2.webp', c: 'sua-chua' },
+          { s: U + '2026/08/sua-chua-nha-cu.4.webp', c: 'sua-chua' },
+          { s: U + '2026/08/sua-chua-nha-cu.3.webp', c: 'sua-chua' },
+          { s: U + '2026/08/sua-chua-nha-cu.5.webp', c: 'sua-chua' },
+          { s: U + '2026/08/sua-chua-nha-cu.webp', c: 'sua-chua' },
+          { s: U + '2026/08/thi-cong-dien-nuoc-phan-tho-quan-2.2.webp', c: 'dien-nuoc' },
+          { s: U + '2026/08/thi-cong-dien-nuoc-phan-tho-quan-2.1.webp', c: 'dien-nuoc' },
+          { s: U + '2026/08/thi-cong-dien-nuoc-phan-tho-quan-2.3.webp', c: 'dien-nuoc' },
+          { s: U + '2026/08/thi-cong-dien-nuoc-phan-tho-quan-2.4.webp', c: 'dien-nuoc' },
+          { s: U + '2026/08/thi-cong-dien-nuoc-phan-tho-quan-2.5.webp', c: 'dien-nuoc' },
+          { s: U + '2026/08/thi-cong-dien-nuoc-phan-tho-quan-2.6.webp', c: 'dien-nuoc' },
+          { s: U + '2026/08/thi-cong-dien-nuoc-phan-tho-quan-2.webp', c: 'dien-nuoc' },
+          { s: U + '2026/08/thi-cong-nha-quan-7.01.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-nha-quan-7.1.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-nha-quan-7.03.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-nha-quan-7.02.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-nha-quan-7.05.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-nha-quan-7.07.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-nha-quan-7.06.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-nha-quan-7.webp', c: 'nha-pho' },
+          { s: U + '2026/08/thi-cong-ong-am-san-mai-long-hung-dong-nai.1.webp', c: 'ong-am' },
+          { s: U + '2026/08/thi-cong-ong-am-san-mai-long-hung-dong-nai.webp', c: 'ong-am' },
+          { s: U + '2026/08/thi-cong-van-phong-quan-3.1.webp', c: 'van-phong' },
+          { s: U + '2026/08/thi-cong-van-phong-quan-3.2.webp', c: 'van-phong' },
+          { s: U + '2026/08/thi-cong-van-phong-quan-3.3.webp', c: 'van-phong' },
+          { s: U + '2026/08/thi-cong-van-phong-quan-3.4.webp', c: 'van-phong' },
+          { s: U + '2026/08/thi-cong-van-phong-quan-3.5.webp', c: 'van-phong' },
+          { s: U + '2026/08/thi-cong-van-phong-quan-3.6.webp', c: 'van-phong' },
+          { s: U + '2026/08/thi-cong-van-phong-quan-3.7.webp', c: 'van-phong' },
+          { s: U + '2026/08/thi-cong-van-phong-quan-3.webp', c: 'van-phong' },
+          { s: U + '2026/08/Lap-cum-bom-ap-tai-quan-1.1.webp', c: 'bom' },
+          { s: U + '2026/08/Lap-cum-bom-ap-tai-quan-1.2.webp', c: 'bom' },
+          { s: U + '2026/08/Lap-cum-bom-ap-tai-quan-1.3.webp', c: 'bom' },
+          { s: U + '2026/08/Lap-cum-bom-ap-tai-quan-1.webp', c: 'bom' },
+          { s: U + '2026/08/thi-cong-me-biet-thu-quan-1.1.webp', c: 'biet-thu' },
+          { s: U + '2026/08/thi-cong-me-biet-thu-quan-1.2.webp', c: 'biet-thu' },
+          { s: U + '2026/08/thi-cong-me-biet-thu-quan-1.4.webp', c: 'biet-thu' },
+          { s: U + '2026/08/thi-cong-me-biet-thu-quan-1.3.webp', c: 'biet-thu' }
+        ];
+        galleryCount.textContent = galleryData.length;
+        galleryData.forEach(function (img, i) {
+          var f = document.createElement('figure');
+          f.className = 'gallery-item';
+          f.dataset.odId = 'gallery-item-' + (i + 1);
+          f.dataset.gf = img.c;
+          var im = document.createElement('img');
+          im.src = img.s;
+          im.alt = 'Ảnh thi công ' + (capNames[img.c] || '');
+          im.loading = 'lazy';
+          im.decoding = 'async';
+          var sp = document.createElement('span');
+          sp.textContent = capNames[img.c] || '';
+          f.appendChild(im); f.appendChild(sp);
+          f.addEventListener('click', function () { openLightbox(i); });
+          galleryGrid.appendChild(f);
+        });
+
+        /* ĐÃ SỬA: applyFilter() dùng display:none để gỡ hẳn phần tử khỏi luồng grid,
+           tránh để lại các ô trống lớn như trước (chỉ toggle opacity). */
+        function applyFilter(key) {
+          galleryGrid.querySelectorAll('.gallery-item').forEach(function (item) {
+            var match = key === 'all' || item.dataset.gf === key;
+            item.classList.toggle('is-hidden', !match);
+          });
+        }
+        document.querySelectorAll('#galleryFilters .chip').forEach(function (ch) {
+          ch.addEventListener('click', function () {
+            applyFilter(ch.dataset.gf);
+            document.querySelectorAll('#galleryFilters .chip').forEach(function (c) { c.classList.toggle('is-active', c === ch); });
+          });
+        });
+      }
+
+      /* Lightbox */
+      var lightbox = document.getElementById('galleryLightbox');
+      var lbImg = document.getElementById('lbImg');
+      var lbCap = document.getElementById('lbCaption');
+      var lbCount = document.getElementById('lbCounter');
+      var curIdx = 0;
+      function showLb(k) {
+        curIdx = Math.min(Math.max(0, k), galleryData.length - 1);
+        lbImg.src = galleryData[curIdx].s;
+        lbImg.alt = 'Ảnh thi công ' + (capNames[galleryData[curIdx].c] || '');
+        lbCap.textContent = capNames[galleryData[curIdx].c] || '';
+        lbCount.textContent = (curIdx + 1) + ' / ' + galleryData.length;
+      }
+      function openLightbox(i) {
+        showLb(i);
+        lightbox.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+        if (ctaBar) ctaBar.classList.add('hid');
+      }
+      function closeLightbox() { lightbox.classList.add('hidden'); document.body.style.overflow = ''; if (ctaBar && !mobileDrawer.classList.contains('open')) ctaBar.classList.remove('hid'); }
+      document.getElementById('lightbox-close') && document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', function (e) { if (e.target === lightbox) closeLightbox(); });
+      var lbPrevBtn = document.querySelector('.lb-prev');
+      var lbNextBtn = document.querySelector('.lb-next');
+      var lbCloseBtn = document.querySelector('.lb-close');
+      if (lbCloseBtn) lbCloseBtn.addEventListener('click', closeLightbox);
+      if (lbPrevBtn) lbPrevBtn.addEventListener('click', function (e) { e.stopPropagation(); showLb(curIdx - 1); });
+      if (lbNextBtn) lbNextBtn.addEventListener('click', function (e) { e.stopPropagation(); showLb(curIdx + 1); });
+      document.addEventListener('keydown', function (e) {
+        if (lightbox.classList.contains('hidden')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') { e.stopPropagation(); showLb(curIdx - 1); }
+        if (e.key === 'ArrowRight') { e.stopPropagation(); showLb(curIdx + 1); }
+      });
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
